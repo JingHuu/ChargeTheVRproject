@@ -4,29 +4,45 @@ using UnityEngine;
 
 public class ColourChange : MonoBehaviour
 {
-    // Scroll main texture based on time
+    public float elapsedTime = .0f;
+    public float speed = .5f;
+    public float fillStartPosition = 0f;
+    public float fillEndPosition = .25f;
 
-    public float scrollSpeed;
+    public int isNowOrrange;
+
     Renderer rend;
 
     void Start()
     {
         rend = GetComponent<Renderer>();
+        StartCoroutine(Fill());
     }
-
     void Update()
     {
-        float offset = Time.time * scrollSpeed;
-        rend.material.mainTextureOffset = new Vector2(offset, 0);
-        
+                
     }
 
+    
     IEnumerator Fill()
     {
-        //make new float = 0
-        //while float < 1
-            //fill towards 1
-            //offset texture
-            yield return null;
+        while (isNowOrrange != 1)
+        {
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            elapsedTime += speed * Time.deltaTime;
+
+            if (elapsedTime >= 1f)
+            {
+                isNowOrrange = 1;
+            }
+            else
+            {
+                isNowOrrange = 0;
+            }
+            yield return isNowOrrange;
+        }
+           
+            
     }
+    
 }
