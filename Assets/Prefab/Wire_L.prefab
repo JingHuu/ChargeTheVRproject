@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2619632525688058882}
   - component: {fileID: 2619632525688058886}
   m_Layer: 0
-  m_Name: Wire_L (1)
+  m_Name: Wire_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2619632525411906977}
-  m_LocalRotation: {x: 0.0067007598, y: 0.22162656, z: 0.029468413, w: 0.97466326}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 25.621, z: 3.4640002}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2619632525408971169
 MeshFilter:
   m_ObjectHideFlags: 0
