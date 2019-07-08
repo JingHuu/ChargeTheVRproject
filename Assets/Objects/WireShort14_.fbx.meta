@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d8449ec7689755e41a19060cee0784c0
+guid: cf21b64972fd4604187a94b9d77133e3
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: lambert1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: WireShort
+    4300000: WireShort7_
   externalObjects: {}
   materials:
     importMaterials: 1
