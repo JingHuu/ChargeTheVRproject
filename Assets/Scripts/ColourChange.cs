@@ -7,42 +7,64 @@ public class ColourChange : MonoBehaviour
     public float elapsedTime = .0f;
     public float speed = .5f;
     public float fillStartPosition = 0f;
-    public float fillEndPosition = .25f;
+    public float fillEndPosition = .5f;
 
-    public int isNowOrrange;
+    public bool isNowOrrange;
+    public GameObject previousObject;
+    
 
     Renderer rend;
 
     void Start()
     {
         rend = GetComponent<Renderer>();
-        StartCoroutine(Fill());
+        //StartCoroutine(Fill());
+        if (this.gameObject.name == "StartEnd")
+        {
+            StartCoroutine(Fill());
+        }
     }
     void Update()
     {
-                
+        if (this.gameObject.name != "StartEnd")
+        {
+            if (previousObject.GetComponent<ColourChange>().isNowOrrange == true)
+            {
+                StartCoroutine(Fill());
+            }
+        }
+
     }
 
-    
+
     IEnumerator Fill()
     {
-        while (isNowOrrange != 1)
+        while (!isNowOrrange)
         {
             rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
             elapsedTime += speed * Time.deltaTime;
 
-            if (elapsedTime >= 1f)
+
             {
-                isNowOrrange = 1;
+                
+                    if (elapsedTime >= 1f)
+                    {
+                        isNowOrrange = true;
+                    }
+                    else
+                    {
+                        
+                    }
+                    
+                
+                
+                yield return isNowOrrange;
+
+                
             }
-            else
-            {
-                isNowOrrange = 0;
-            }
-            yield return isNowOrrange;
+
+
         }
-           
-            
+
     }
-    
 }

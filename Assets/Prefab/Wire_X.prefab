@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 8263440895524319822}
   - component: {fileID: 8263440895523549806}
   - component: {fileID: 8263440895522418862}
+  - component: {fileID: 6567634822487315839}
   m_Layer: 0
   m_Name: polySurface1
   m_TagString: Untagged
@@ -193,7 +194,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 39b75e034ce5d964593acf743fba824a, type: 3}
+  - {fileID: 2100000, guid: 5708990e1cb870b4588c0cfe62aeb9a0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,3 +214,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6567634822487315839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8263440895524613742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elapsedTime: 0
+  speed: 0.5
+  fillStartPosition: 0
+  fillEndPosition: 0.5
+  isNowOrrange: 0
+  previousObject: {fileID: 0}

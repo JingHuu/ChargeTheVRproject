@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 556209201198722388}
   - component: {fileID: 556209201202113908}
   - component: {fileID: 556209201201147828}
+  - component: {fileID: 2334826380550242974}
   m_Layer: 0
   m_Name: polySurface3
   m_TagString: Untagged
@@ -116,7 +117,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bf23a8dc5d0ef674fa75b1f0e835e5e3, type: 3}
+  - {fileID: 2100000, guid: 5708990e1cb870b4588c0cfe62aeb9a0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -136,6 +137,24 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2334826380550242974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556209201199149428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elapsedTime: 0
+  speed: 0.5
+  fillStartPosition: 0
+  fillEndPosition: 0.5
+  isNowOrrange: 0
+  previousObject: {fileID: 0}
 --- !u!1 &556209201199149430
 GameObject:
   m_ObjectHideFlags: 0

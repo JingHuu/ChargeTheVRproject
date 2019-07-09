@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7980612698985730344}
   - component: {fileID: 7980612698988630280}
   - component: {fileID: 7980612698987631560}
+  - component: {fileID: 8373332641188790181}
   m_Layer: 0
   m_Name: WireMedium14_
   m_TagString: Untagged
@@ -57,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5eca16914823d2f4f8025530a60af0af, type: 3}
+  - {fileID: 2100000, guid: 5708990e1cb870b4588c0cfe62aeb9a0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -77,3 +78,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8373332641188790181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980612698985696520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elapsedTime: 0
+  speed: 0.5
+  fillStartPosition: 0
+  fillEndPosition: 0.5
+  isNowOrrange: 0
+  previousObject: {fileID: 0}
