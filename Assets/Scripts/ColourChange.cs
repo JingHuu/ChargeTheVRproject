@@ -28,6 +28,7 @@ public class ColourChange : MonoBehaviour
     {
         if (this.gameObject.name != "StartEnd")
         {
+            if (previousObject == null) return;
             if (previousObject.GetComponent<ColourChange>().isNowOrrange == true)
             {
                 StartCoroutine(Fill());
