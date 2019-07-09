@@ -1612,7 +1612,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5708990e1cb870b4588c0cfe62aeb9a0, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 130739294028822909, guid: 151cf65a3627dc54f9eeac5cae368400, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 151cf65a3627dc54f9eeac5cae368400, type: 3}
 --- !u!4 &217163718 stripped
 Transform:
@@ -3895,7 +3896,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5708990e1cb870b4588c0cfe62aeb9a0, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6567634822487315839, guid: 3c231b6aa3eb0e742922785282ed2185, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3c231b6aa3eb0e742922785282ed2185, type: 3}
 --- !u!4 &758955797 stripped
 Transform:
@@ -6239,31 +6241,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f932b31d0423bd045b494e15eea7c797, type: 3}
---- !u!1 &1108388124 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8263440895524613740, guid: 3c231b6aa3eb0e742922785282ed2185,
-    type: 3}
-  m_PrefabInstance: {fileID: 749550557}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1108388128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108388124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.25
-  isNowOrrange: 0
-  previousObject: {fileID: 1846851730}
-  isWire: 1
 --- !u!4 &1111376486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 556209201198722384, guid: d3c9904ba9d5cf14c829a70f550fff23,
@@ -6363,7 +6340,6 @@ MonoBehaviour:
   fillEndPosition: 0.5
   isNowOrrange: 0
   previousObject: {fileID: 1846851730}
-  isWire: 1
 --- !u!1 &1121091057
 GameObject:
   m_ObjectHideFlags: 0
@@ -8614,7 +8590,6 @@ MonoBehaviour:
   fillEndPosition: 0.5
   isNowOrrange: 0
   previousObject: {fileID: 1588947531}
-  isWire: 1
 --- !u!1001 &1604835005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9497,7 +9472,6 @@ MonoBehaviour:
   fillEndPosition: 0.5
   isNowOrrange: 0
   previousObject: {fileID: 1588947531}
-  isWire: 1
 --- !u!1001 &1855424018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11229,7 +11203,6 @@ MonoBehaviour:
   fillEndPosition: 0.25
   isNowOrrange: 0
   previousObject: {fileID: 0}
-  isWire: 1
 --- !u!23 &2135305048
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11606,7 +11579,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5708990e1cb870b4588c0cfe62aeb9a0, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 453173130924804805, guid: d7591722965d0d6458660bd84833d8ab, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7591722965d0d6458660bd84833d8ab, type: 3}
 --- !u!4 &2925150183301595140 stripped
 Transform:
