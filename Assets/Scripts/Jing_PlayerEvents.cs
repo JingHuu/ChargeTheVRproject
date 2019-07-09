@@ -1,145 +1,127 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using OVR.OpenVR;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Jing_PlayerEvents : MonoBehaviour
 {
-    #region Events
-    public static UnityAction OnTouchpadUp = null;
-    public static UnityAction OnTouchpadDown = null;
-    public static UnityAction<OVRInput.Controller, GameObject> OnControllerSource = null;
-    #endregion
+    
+    public delegate void TouchpadUp();
+    public static event TouchpadUp OnTouchPadUp;
+    
+    public delegate void TouchpadDown();
+    public static event TouchpadDown OnTouchPadDown;
+    
+    public delegate void ControllerSource(OVRInput.Controller control, GameObject obj);
+    public static event ControllerSource OnControllerSource;
+    
+    
+    public GameObject rightAnchor;
+    public GameObject leftAnchor;
+    public GameObject headAnchor;
 
-    #region Anchors
-    public GameObject m_LeftAnchor;
-    public GameObject m_RightAnchor;
-    public GameObject m_HeadAnchor;
-    #endregion
-
-    #region Input
-    private Dictionary<OVRInput.Controller, GameObject> m_ControllerSets = null;
-    private OVRInput.Controller m_InputSource = OVRInput.Controller.None;
-    private OVRInput.Controller m_Controller = OVRInput.Controller.None;
-    private bool m_InputActive = true;
-    #endregion
+    
+    private Dictionary<OVRInput.Controller, GameObject> controllerSets = null;
+    private OVRInput.Controller inputSource = OVRInput.Controller.None;
+    private OVRInput.Controller controller= OVRInput.Controller.None;
+    private bool inputActive = true;
 
     private void Awake()
     {
         OVRManager.HMDMounted += PlayerFound;
-        OVRManager.HMDUnmounted += PlayerLoss;
+        OVRManager.HMDUnmounted += PlayerLost;
 
-        m_ControllerSets = CreateControllerSets();
+        controllerSets = CreateControllerSets();
     }
 
     private void OnDestroy()
     {
         OVRManager.HMDMounted -= PlayerFound;
-        OVRManager.HMDUnmounted -= PlayerLoss;
+        OVRManager.HMDUnmounted -= PlayerLost;
     }
-
 
     private void Update()
     {
-        //check for active input
-        if (!m_InputActive)
-            return;
-
-        //check if the controler exists
+        // check for active input
+        if (!inputActive) return;
+        
+        // check for controller
         CheckForController();
-
-        //check for input source
+        
         CheckInputSource();
-
-        //check for actual input
         Input();
+        
     }
 
-    private void CheckForController()
+    void CheckInputSource()
     {
-        OVRInput.Controller controllerCheck = m_Controller;
+        inputSource = UpdateSource(OVRInput.GetActiveController(), inputSource);
+    }
 
-        //Right remote
-        if (OVRInput.IsControllerConnected(OVRInput.Controller.RTrackedRemote))
-            controllerCheck = OVRInput.Controller.RTouch;
+    void CheckForController()
+    {
+        OVRInput.Controller controllerCheck = controller;
 
-        //left remote
+        // remote
         if (OVRInput.IsControllerConnected(OVRInput.Controller.LTrackedRemote))
-            controllerCheck = OVRInput.Controller.LTouch;
+            controllerCheck = OVRInput.Controller.LTrackedRemote;
+        
+        if (OVRInput.IsControllerConnected(OVRInput.Controller.RTrackedRemote))
+            controllerCheck = OVRInput.Controller.RTrackedRemote;
+        
+        if (OVRInput.IsControllerConnected(OVRInput.Controller.Touchpad)) // head
+            controllerCheck = OVRInput.Controller.Touch;
 
-        //If no controllers, headset
-        if (!OVRInput.IsControllerConnected(OVRInput.Controller.RTrackedRemote) && !OVRInput.IsControllerConnected(OVRInput.Controller.LTrackedRemote))
-            controllerCheck = OVRInput.Controller.Touchpad;
+        controller = UpdateSource(controllerCheck, controller);
 
-        //update
-        m_Controller = UpdateSource(controllerCheck, m_Controller);
     }
-
-    private void CheckInputSource()
+    
+    void Input()
     {
-        //update
-        m_InputSource = UpdateSource(OVRInput.GetActiveController(), m_InputSource);
-    }
-
-    private void Input()
-    {
-        //Touchpad down
-        if(OVRInput.GetDown(OVRInput.Button.PrimaryTouchpad))
-        {
-            if (OnTouchpadDown != null)
-                OnTouchpadDown();
-        }
-
-        //Touchpad up
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryTouchpad))
+            OnTouchPadDown?.Invoke();
+        
         if (OVRInput.GetUp(OVRInput.Button.PrimaryTouchpad))
-        {
-            if (OnTouchpadUp != null)
-                OnTouchpadUp();
-        }
+            OnTouchPadUp?.Invoke();
+       
     }
 
     private OVRInput.Controller UpdateSource(OVRInput.Controller check, OVRInput.Controller previous)
     {
-        //if values are the same, return
         if (check == previous)
             return previous;
 
-        //get controller object
-        GameObject controllerObject = null;
-        m_ControllerSets.TryGetValue(check, out controllerObject);
+        GameObject controlObj = null;
 
-        //if no controller object, set to the head
-        if (controllerObject == null)
-            controllerObject = m_HeadAnchor;
+        controllerSets.TryGetValue(check, out controlObj);
 
-        //Send out event
-        if (OnControllerSource != null)
-            OnControllerSource(check, controllerObject);
+        if (controlObj == null) controlObj = headAnchor;
 
-        //Return new value
+        OnControllerSource?.Invoke(check, controlObj);
         return check;
     }
-
-    private void PlayerFound()
+    
+    void PlayerFound()
     {
-        m_InputActive = true;
+        inputActive = true;
     }
 
-    private void PlayerLoss()
+    void PlayerLost()
     {
-        m_InputActive = false;
+        inputActive = false;
     }
 
-    private Dictionary<OVRInput.Controller, GameObject> CreateControllerSets()
+    Dictionary<OVRInput.Controller, GameObject> CreateControllerSets()
     {
-        Dictionary<OVRInput.Controller, GameObject> newSets = new Dictionary<OVRInput.Controller, GameObject>()
+        Dictionary<OVRInput.Controller, GameObject> dict = new Dictionary<OVRInput.Controller, GameObject>()
         {
-            {OVRInput.Controller.LTouch, m_LeftAnchor },
-            {OVRInput.Controller.RTouch, m_RightAnchor },
-            {OVRInput.Controller.Remote, m_HeadAnchor },
+            {OVRInput.Controller.RTrackedRemote, rightAnchor },
+            {OVRInput.Controller.LTrackedRemote, leftAnchor},
+            {OVRInput.Controller.Touchpad, headAnchor}
         };
-
-        return newSets;
+        
+       
+        return dict;
     }
-
 }
