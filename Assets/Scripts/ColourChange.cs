@@ -10,8 +10,14 @@ public class ColourChange : MonoBehaviour
     public float fillEndPosition = .5f;
 
     public bool isNowOrrange;
-    public GameObject previousObject;
-    
+
+    //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
+    public GameObject previousObject1;
+    //Needed for nodes with mulitple inputs.
+    public GameObject previousObject2;
+    public GameObject previousObject3;
+    public GameObject previousObject4;
+
 
     Renderer rend;
 
@@ -28,8 +34,10 @@ public class ColourChange : MonoBehaviour
     {
         if (this.gameObject.name != "StartEnd")
         {
-            if (previousObject == null) return;
-            if (previousObject.GetComponent<ColourChange>().isNowOrrange == true)
+            if (previousObject1.GetComponent<ColourChange>().isNowOrrange == true 
+                && previousObject2.GetComponent<ColourChange>().isNowOrrange == true 
+                && previousObject3.GetComponent<ColourChange>().isNowOrrange == true 
+                && previousObject4.GetComponent<ColourChange>().isNowOrrange == true)
             {
                 StartCoroutine(Fill());
             }
