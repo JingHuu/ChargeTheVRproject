@@ -18,7 +18,7 @@ public class Jing_PlayerEvents : MonoBehaviour
     
     
     public GameObject rightAnchor;
-    public GameObject leftAnchor;
+  //  public GameObject leftAnchor;
     public GameObject headAnchor;
 
     
@@ -64,11 +64,11 @@ public class Jing_PlayerEvents : MonoBehaviour
         OVRInput.Controller controllerCheck = controller;
 
         // remote
-        if (OVRInput.IsControllerConnected(OVRInput.Controller.LTrackedRemote))
-            controllerCheck = OVRInput.Controller.LTrackedRemote;
+        if (OVRInput.IsControllerConnected(OVRInput.Controller.Remote))
+            controllerCheck = OVRInput.Controller.Remote;
         
-        if (OVRInput.IsControllerConnected(OVRInput.Controller.RTrackedRemote))
-            controllerCheck = OVRInput.Controller.RTrackedRemote;
+   //     if (OVRInput.IsControllerConnected(OVRInput.Controller.LTrackedRemote))
+   //         controllerCheck = OVRInput.Controller.LTrackedRemote;
         
         if (OVRInput.IsControllerConnected(OVRInput.Controller.Touchpad)) // head
             controllerCheck = OVRInput.Controller.Touch;
@@ -116,8 +116,8 @@ public class Jing_PlayerEvents : MonoBehaviour
     {
         Dictionary<OVRInput.Controller, GameObject> dict = new Dictionary<OVRInput.Controller, GameObject>()
         {
-            {OVRInput.Controller.RTrackedRemote, rightAnchor },
-            {OVRInput.Controller.LTrackedRemote, leftAnchor},
+            {OVRInput.Controller.Remote, rightAnchor },
+          //  {OVRInput.Controller.Remote, leftAnchor},
             {OVRInput.Controller.Touchpad, headAnchor}
         };
         
