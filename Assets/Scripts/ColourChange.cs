@@ -5,12 +5,12 @@ using UnityEngine;
 public class ColourChange : MonoBehaviour
 {
     public float elapsedTime = .0f;
-    public float speed = .0f;
+    public float speed = .005f;
     public float fillStartPosition = 0f;
     public float fillEndPosition = .5f;
 
     public bool isNowOrrange;
-    private bool isInPlace;
+    public bool isNowEmpty;
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
     public GameObject previousObject1;
@@ -20,9 +20,10 @@ public class ColourChange : MonoBehaviour
     public GameObject previousObject4;
 
     public float triggerAngle1;
-    //public float triggerAngle2;
-    //public float triggerAngle3;
-    //public float triggerAngle4;
+    public float triggerAngle2;
+    public float triggerAngle3;
+    public float triggerAngle4;
+
 
     Renderer rend;
 
@@ -37,21 +38,29 @@ public class ColourChange : MonoBehaviour
     }
     void Update()
     {
-        
 
-        if (this.gameObject.name != "StartEnd")
+        //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
+        if (this.gameObject.name != "StartEnd"
+            && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
         {
-            if (previousObject1.GetComponent<ColourChange>().isNowOrrange == true 
-                && previousObject2.GetComponent<ColourChange>().isNowOrrange == true 
-                && previousObject3.GetComponent<ColourChange>().isNowOrrange == true 
+            if (previousObject1.GetComponent<ColourChange>().isNowOrrange == true
+                && previousObject2.GetComponent<ColourChange>().isNowOrrange == true
+                && previousObject3.GetComponent<ColourChange>().isNowOrrange == true
                 && previousObject4.GetComponent<ColourChange>().isNowOrrange == true)
             {
                 StartCoroutine(Fill());
             }
         }
+        else
+        {
+            StartCoroutine(Empty());
+        }
 
+        
     }
-
     
 
     IEnumerator Fill()
@@ -71,6 +80,28 @@ public class ColourChange : MonoBehaviour
 
                 }
                 yield return isNowOrrange;
+            }
+        }
+    }
+
+    IEnumerator Empty()
+    {
+        while (!isNowEmpty)
+        {
+            //Start at fill end, move to fill start
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillEndPosition, fillStartPosition, elapsedTime), 0));
+            elapsedTime += speed * Time.deltaTime;
+
+            {
+                if (elapsedTime >= 1f)
+                {
+                    isNowEmpty = true;
+                }
+                else
+                {
+
+                }
+                yield return isNowEmpty;
             }
         }
     }
