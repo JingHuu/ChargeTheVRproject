@@ -41,10 +41,10 @@ public class ColourChange : MonoBehaviour
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
         if (this.gameObject.name != "StartEnd"
-            && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
+            && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.x)
+            || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.x)
+            || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.x)
+            || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.x))
         {
             if (previousObject1.GetComponent<ColourChange>().isNowOrrange == true
                 && previousObject2.GetComponent<ColourChange>().isNowOrrange == true
@@ -54,10 +54,7 @@ public class ColourChange : MonoBehaviour
                 StartCoroutine(Fill());
             }
         }
-        else
-        {
-            StartCoroutine(Empty());
-        }
+        
 
         
     }

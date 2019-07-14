@@ -9,7 +9,7 @@ public class RotateOnClick : MonoBehaviour
     //Click left mouse button to rotate target
     private void OnMouseDown()
     {
-        transform.Rotate(0, 0, 45);
+        transform.Rotate(45, 0, 0);
     }
     
     private void WhenTriggerPulled()
