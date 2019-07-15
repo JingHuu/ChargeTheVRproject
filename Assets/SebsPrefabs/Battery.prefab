@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6344106953015357565}
   - component: {fileID: 6344106953016651869}
   - component: {fileID: 6344106953017782941}
-  - component: {fileID: 3506465645469909733}
+  - component: {fileID: 5300020277566032007}
   m_Layer: 0
   m_Name: Battery
   m_TagString: Untagged
@@ -78,7 +78,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &3506465645469909733
+--- !u!114 &5300020277566032007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6344106953015782493}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d2e05c6e0c4c2348af7a2504dc8e4a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0

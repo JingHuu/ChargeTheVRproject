@@ -1,0 +1,105 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NodeColourChange : MonoBehaviour
+{
+    public float elapsedTime = .0f;
+    public float speed = .005f;
+    public float fillStartPosition = 0f;
+    public float fillEndPosition = .5f;
+
+    public bool isNowOrrange;
+    public bool isNowEmpty;
+
+    //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
+    public GameObject previousObject1;
+    //Needed for nodes with mulitple inputs.
+    public GameObject previousObject2;
+    public GameObject previousObject3;
+    public GameObject previousObject4;
+
+    public float triggerAngle1;
+    public float triggerAngle2;
+    public float triggerAngle3;
+    public float triggerAngle4;
+
+
+    Renderer rend;
+
+    void Start()
+    {
+        rend = GetComponent<Renderer>();
+        //StartCoroutine(Fill());
+        if (this.gameObject.name == "StartEnd")
+        {
+            StartCoroutine(Fill());
+        }
+    }
+    void Update()
+    {
+
+        //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
+        if (this.gameObject.name != "StartEnd"
+            && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.x)
+            || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.x)
+            || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.x)
+            || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.x))
+        {
+            if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == true
+                && previousObject2.GetComponent<NodeColourChange>().isNowOrrange == true
+                && previousObject3.GetComponent<NodeColourChange>().isNowOrrange == true
+                && previousObject4.GetComponent<NodeColourChange>().isNowOrrange == true)
+            {
+                StartCoroutine(Fill());
+            }
+        }
+        
+
+        
+    }
+    
+
+    IEnumerator Fill()
+    {
+        while (!isNowOrrange)
+        {
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            elapsedTime += speed * Time.deltaTime;
+
+            {
+                if (elapsedTime >= 1f)
+                {
+                    isNowOrrange = true;
+                }
+                else
+                {
+
+                }
+                yield return isNowOrrange;
+            }
+        }
+    }
+
+    IEnumerator Empty()
+    {
+        while (!isNowEmpty)
+        {
+            //Start at fill end, move to fill start
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillEndPosition, fillStartPosition, elapsedTime), 0));
+            elapsedTime += speed * Time.deltaTime;
+
+            {
+                if (elapsedTime >= 1f)
+                {
+                    isNowEmpty = true;
+                }
+                else
+                {
+
+                }
+                yield return isNowEmpty;
+            }
+        }
+    }
+}

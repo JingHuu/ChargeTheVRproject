@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 9187627162787297271}
   - component: {fileID: 1836014226236550426}
   - component: {fileID: 1969269238845143485}
+  - component: {fileID: 7847614419369827233}
   m_Layer: 0
   m_Name: Pipe_4Way
   m_TagString: Untagged
@@ -291,3 +292,29 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.005
   m_Center: {x: 0.2487947, y: 0, z: 0}
+--- !u!114 &7847614419369827233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187627162787458007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2e05c6e0c4c2348af7a2504dc8e4a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elapsedTime: 0
+  speed: 0.005
+  fillStartPosition: 0
+  fillEndPosition: 0.5
+  isNowOrrange: 0
+  isNowEmpty: 0
+  previousObject1: {fileID: 0}
+  previousObject2: {fileID: 0}
+  previousObject3: {fileID: 0}
+  previousObject4: {fileID: 0}
+  triggerAngle1: 0
+  triggerAngle2: 0
+  triggerAngle3: 0
+  triggerAngle4: 0
