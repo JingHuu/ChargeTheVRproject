@@ -11,6 +11,7 @@ public class PipeColourChange : MonoBehaviour
 
     public bool isNowOrrange;
     public bool isNowEmpty;
+    public bool isStartBattery;
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
     public GameObject previousObject1;
@@ -35,7 +36,12 @@ public class PipeColourChange : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         //StartCoroutine(Fill());
-        if (this.gameObject.name == "StartEnd")
+        /*if (this.gameObject.name == "StartEnd")
+        {
+            StartCoroutine(Fill());
+        }*/
+        
+        if(isStartBattery == true)
         {
             StartCoroutine(Fill());
         }
@@ -73,6 +79,10 @@ public class PipeColourChange : MonoBehaviour
                 StartCoroutine(Empty());
             }
         }
+        if (previousObject1.GetComponent<PipeColourChange>().isNowOrrange == false)
+        {
+            StartCoroutine(Empty());
+        }
 
     }
     
@@ -104,11 +114,11 @@ public class PipeColourChange : MonoBehaviour
         {
             //Start at fill end, move to fill start
             
-            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillEndPosition, fillStartPosition, elapsedTime), 0));
-            elapsedTime = 0;
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            elapsedTime += -speed * Time.deltaTime;
 
             {
-                if (elapsedTime == 0f)
+                if (elapsedTime <= 0f)
                 {
                     isNowOrrange = false;
                 }
