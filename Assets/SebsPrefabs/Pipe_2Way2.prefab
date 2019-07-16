@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7857693739181912993}
   - component: {fileID: 7857693739178521475}
   - component: {fileID: 7857693739179487555}
+  - component: {fileID: 7251279616892498053}
   m_Layer: 0
   m_Name: pSphere1
   m_TagString: Untagged
@@ -77,6 +78,37 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7251279616892498053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7857693739181420417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elapsedTime: 0
+  speed: 0.005
+  fillStartPosition: 0
+  fillEndPosition: 0.5
+  isNowOrrange: 0
+  isNowEmpty: 0
+  isStartBattery: 0
+  previousObject1: {fileID: 0}
+  previousObject2: {fileID: 0}
+  previousObject3: {fileID: 0}
+  previousObject4: {fileID: 0}
+  triggerAngle1: 0
+  triggerAngle2: 0
+  triggerAngle3: 0
+  triggerAngle4: 0
+  badAngle1: 0
+  badAngle2: 0
+  badAngle3: 0
+  badAngle4: 0
 --- !u!1 &7857693739181420419
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,7 +253,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a551464c51fc9564299db571b75cc6aa, type: 2}
+  - {fileID: 2100000, guid: e0d8055efb3db904ba9bb67903a5f96c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -298,7 +330,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a551464c51fc9564299db571b75cc6aa, type: 2}
+  - {fileID: 2100000, guid: e0d8055efb3db904ba9bb67903a5f96c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
