@@ -5,12 +5,11 @@ using UnityEngine;
 public class PipeColourChange : MonoBehaviour
 {
     public float elapsedTime = .0f;
-    public float speed = .005f;
+    public float speed = .5f;
     public float fillStartPosition = 0f;
     public float fillEndPosition = .5f;
 
     public bool isNowOrrange;
-    public bool isNowEmpty;
     public bool isStartBattery;
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
@@ -25,10 +24,10 @@ public class PipeColourChange : MonoBehaviour
     public float triggerAngle3;
     public float triggerAngle4;
 
-    public float badAngle1;
-    public float badAngle2;
-    public float badAngle3;
-    public float badAngle4;
+    public float badAngle1 = 10;
+    public float badAngle2 = 10;
+    public float badAngle3 = 10;
+    public float badAngle4 = 10;
 
     Renderer rend;
 
@@ -114,7 +113,7 @@ public class PipeColourChange : MonoBehaviour
         {
             //Start at fill end, move to fill start
             
-            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(0f, -fillEndPosition, elapsedTime), 0));
             elapsedTime += -speed * Time.deltaTime;
 
             {

@@ -1,0 +1,294 @@
+fileFormatVersion: 2
+guid: 74536333fb4fbba43bd41b0c730bcc61
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Battery
+    100004: Battery1
+    100006: Battery1 1
+    100008: Battery2
+    100010: Battery2 1
+    100012: Battery3
+    100014: Battery3 1
+    100016: Battery4
+    100018: Battery5
+    100020: Battery5 1
+    100022: Battery6
+    100024: Battery6 1
+    100026: Battery7
+    100028: Battery7 1
+    100030: Battery8
+    100032: Battery8 1
+    100034: BatteryEnd
+    100036: BatteryEnd 1
+    100038: BatteryStart
+    100040: BatteryStart 1
+    100042: PipeSng_Link
+    100044: PipeSng_Link 1
+    100046: PipeSng_Link 2
+    100048: PipeSng_Link 3
+    100050: PipeSng_Link 4
+    100052: PipeSng_Link 5
+    100054: PipeSng_Link 6
+    100056: PipeSng_Link1
+    100058: PipeSng_Link1 1
+    100060: PipeSng_Link1 2
+    100062: PipeSng_Link1 3
+    100064: PipeSng_Link1 4
+    100066: PipeSng_Link1 5
+    100068: PipeSng_Link1 6
+    100070: PipeSng_Link1 7
+    100072: PipeSng_Link2
+    100074: PipeSng_Link2 1
+    100076: PipeSng_Link2 2
+    100078: PipeSng_Link2 3
+    100080: PipeSng_Link2 4
+    100082: PipeSng_Link2 5
+    100084: PipeSng_Link3
+    100086: PipeSng_Link3 1
+    100088: PipeSng_Link3 2
+    100090: PipeSng_Link3 3
+    100092: PipeSng_Link3 4
+    400000: //RootNode
+    400002: Battery
+    400004: Battery1
+    400006: Battery1 1
+    400008: Battery2
+    400010: Battery2 1
+    400012: Battery3
+    400014: Battery3 1
+    400016: Battery4
+    400018: Battery5
+    400020: Battery5 1
+    400022: Battery6
+    400024: Battery6 1
+    400026: Battery7
+    400028: Battery7 1
+    400030: Battery8
+    400032: Battery8 1
+    400034: BatteryEnd
+    400036: BatteryEnd 1
+    400038: BatteryStart
+    400040: BatteryStart 1
+    400042: PipeSng_Link
+    400044: PipeSng_Link 1
+    400046: PipeSng_Link 2
+    400048: PipeSng_Link 3
+    400050: PipeSng_Link 4
+    400052: PipeSng_Link 5
+    400054: PipeSng_Link 6
+    400056: PipeSng_Link1
+    400058: PipeSng_Link1 1
+    400060: PipeSng_Link1 2
+    400062: PipeSng_Link1 3
+    400064: PipeSng_Link1 4
+    400066: PipeSng_Link1 5
+    400068: PipeSng_Link1 6
+    400070: PipeSng_Link1 7
+    400072: PipeSng_Link2
+    400074: PipeSng_Link2 1
+    400076: PipeSng_Link2 2
+    400078: PipeSng_Link2 3
+    400080: PipeSng_Link2 4
+    400082: PipeSng_Link2 5
+    400084: PipeSng_Link3
+    400086: PipeSng_Link3 1
+    400088: PipeSng_Link3 2
+    400090: PipeSng_Link3 3
+    400092: PipeSng_Link3 4
+    2100000: Default_Material
+    2300000: Battery
+    2300002: Battery1 1
+    2300004: Battery2 1
+    2300006: Battery3 1
+    2300008: Battery5 1
+    2300010: Battery6 1
+    2300012: Battery7 1
+    2300014: Battery8 1
+    2300016: BatteryEnd 1
+    2300018: BatteryStart 1
+    2300020: PipeSng_Link
+    2300022: PipeSng_Link 1
+    2300024: PipeSng_Link 2
+    2300026: PipeSng_Link 3
+    2300028: PipeSng_Link 4
+    2300030: PipeSng_Link 5
+    2300032: PipeSng_Link 6
+    2300034: PipeSng_Link1
+    2300036: PipeSng_Link1 1
+    2300038: PipeSng_Link1 2
+    2300040: PipeSng_Link1 3
+    2300042: PipeSng_Link1 4
+    2300044: PipeSng_Link1 5
+    2300046: PipeSng_Link1 6
+    2300048: PipeSng_Link1 7
+    2300050: PipeSng_Link2
+    2300052: PipeSng_Link2 1
+    2300054: PipeSng_Link2 2
+    2300056: PipeSng_Link2 3
+    2300058: PipeSng_Link2 4
+    2300060: PipeSng_Link2 5
+    2300062: PipeSng_Link3
+    2300064: PipeSng_Link3 1
+    2300066: PipeSng_Link3 2
+    2300068: PipeSng_Link3 3
+    2300070: PipeSng_Link3 4
+    3300000: Battery
+    3300002: Battery1 1
+    3300004: Battery2 1
+    3300006: Battery3 1
+    3300008: Battery5 1
+    3300010: Battery6 1
+    3300012: Battery7 1
+    3300014: Battery8 1
+    3300016: BatteryEnd 1
+    3300018: BatteryStart 1
+    3300020: PipeSng_Link
+    3300022: PipeSng_Link 1
+    3300024: PipeSng_Link 2
+    3300026: PipeSng_Link 3
+    3300028: PipeSng_Link 4
+    3300030: PipeSng_Link 5
+    3300032: PipeSng_Link 6
+    3300034: PipeSng_Link1
+    3300036: PipeSng_Link1 1
+    3300038: PipeSng_Link1 2
+    3300040: PipeSng_Link1 3
+    3300042: PipeSng_Link1 4
+    3300044: PipeSng_Link1 5
+    3300046: PipeSng_Link1 6
+    3300048: PipeSng_Link1 7
+    3300050: PipeSng_Link2
+    3300052: PipeSng_Link2 1
+    3300054: PipeSng_Link2 2
+    3300056: PipeSng_Link2 3
+    3300058: PipeSng_Link2 4
+    3300060: PipeSng_Link2 5
+    3300062: PipeSng_Link3
+    3300064: PipeSng_Link3 1
+    3300066: PipeSng_Link3 2
+    3300068: PipeSng_Link3 3
+    3300070: PipeSng_Link3 4
+    4300000: PipeSng_Link
+    4300002: PipeSng_Link1
+    4300004: PipeSng_Link2
+    4300006: Battery1
+    4300008: PipeSng_Link
+    4300010: PipeSng_Link1
+    4300012: PipeSng_Link2
+    4300014: Battery2
+    4300016: PipeSng_Link3
+    4300018: PipeSng_Link1
+    4300020: PipeSng_Link2
+    4300022: Battery3
+    4300024: PipeSng_Link3
+    4300026: PipeSng_Link
+    4300028: PipeSng_Link2
+    4300030: Battery
+    4300032: PipeSng_Link
+    4300034: PipeSng_Link1
+    4300036: PipeSng_Link2
+    4300038: Battery5
+    4300040: PipeSng_Link
+    4300042: PipeSng_Link1
+    4300044: Battery6
+    4300046: PipeSng_Link3
+    4300048: PipeSng_Link1
+    4300050: Battery7
+    4300052: PipeSng_Link
+    4300054: BatteryStart
+    4300056: PipeSng_Link
+    4300058: PipeSng_Link3
+    4300060: BatteryEnd
+    4300062: PipeSng_Link2
+    4300064: PipeSng_Link1
+    4300066: PipeSng_Link3
+    4300068: PipeSng_Link1
+    4300070: Battery8
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
