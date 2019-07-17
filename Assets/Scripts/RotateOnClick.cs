@@ -9,7 +9,20 @@ public class RotateOnClick : MonoBehaviour
     //Click left mouse button to rotate target
     private void OnMouseDown()
     {
-        transform.Rotate(45, 0, 0);
+        /*
+        Transform[] temp = transform.GetComponentsInChildren<Transform>();
+
+        //for loop
+        for (int i = 0; i < temp.Length -1; i++)
+        {
+            transform.GetChild(i).rotation *= Quaternion.AngleAxis(45, transform.forward);
+        }
+       
+        //transform.GetChild(4).rotation *= Quaternion.AngleAxis(45, transform.forward);
+
+        */
+
+        transform.Rotate(0, 0, 45);
     }
     
     private void WhenTriggerPulled()
