@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -31790,8 +31790,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8431212670029110305}
   - component: {fileID: 8431212670030437405}
-  - component: {fileID: 8431212670031404765}
   - component: {fileID: 8431212670029135874}
+  - component: {fileID: 8431212670031404765}
   m_Layer: 0
   m_Name: Battery5 1
   m_TagString: Untagged
@@ -32675,8 +32675,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8431212670029110289}
   - component: {fileID: 8431212670030437381}
-  - component: {fileID: 8431212670031404741}
   - component: {fileID: 8431212670029135986}
+  - component: {fileID: 8431212670031404741}
   m_Layer: 0
   m_Name: BatteryEnd 1
   m_TagString: Untagged
@@ -32706,10 +32706,10 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675555}
   previousObject3: {fileID: 8718356408773675553}
   previousObject4: {fileID: 8718356408773675617}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
+  triggerAngle1: 7.2
+  triggerAngle2: 7.2
+  triggerAngle3: 7.2
+  triggerAngle4: 7.2
   badAngle1: 10
   badAngle2: 10
   badAngle3: 10
