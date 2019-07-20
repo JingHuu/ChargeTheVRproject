@@ -7,7 +7,7 @@ public class RotateOnClick : MonoBehaviour
     //public float x, y, z;
 
     //Click left mouse button to rotate target
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
         /*
         Transform[] temp = transform.GetComponentsInChildren<Transform>();
