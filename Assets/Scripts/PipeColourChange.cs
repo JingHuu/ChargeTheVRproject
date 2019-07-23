@@ -90,7 +90,9 @@ public class PipeColourChange : MonoBehaviour
     {
         while (!isNowOrrange)
         {
-            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            //Vector1_776A8DBC
+            rend.material.SetFloat("_Lerp", Mathf.Lerp(0, 1, elapsedTime));
             elapsedTime += speed * Time.deltaTime;
 
             {
@@ -112,9 +114,10 @@ public class PipeColourChange : MonoBehaviour
         while (isNowOrrange)
         {
             //Start at fill end, move to fill start
-            
-            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(0f, -fillEndPosition, elapsedTime), 0));
-            elapsedTime += -speed * Time.deltaTime;
+
+            //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(0f, -fillEndPosition, elapsedTime), 0));
+            rend.material.SetFloat("_Lerp", Mathf.Lerp(1, 0, elapsedTime));
+            elapsedTime += speed * Time.deltaTime;
 
             {
                 if (elapsedTime <= 0f)
