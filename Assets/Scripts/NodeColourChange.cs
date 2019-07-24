@@ -5,12 +5,12 @@ using UnityEngine;
 public class NodeColourChange : MonoBehaviour
 {
     public float elapsedTime = .0f;
-    public float speed = .005f;
+    public float speed = .5f;
     public float fillStartPosition = 0f;
     public float fillEndPosition = .5f;
 
     public bool isNowOrrange;
-    public bool isNowEmpty;
+    public bool isStartBattery;
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
     public GameObject previousObject1;
@@ -24,6 +24,10 @@ public class NodeColourChange : MonoBehaviour
     public float triggerAngle3;
     public float triggerAngle4;
 
+    public float badAngle1 = 10;
+    public float badAngle2 = 10;
+    public float badAngle3 = 10;
+    public float badAngle4 = 10;
 
     Renderer rend;
 
@@ -31,7 +35,12 @@ public class NodeColourChange : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         //StartCoroutine(Fill());
-        if (this.gameObject.name == "StartEnd")
+        /*if (this.gameObject.name == "StartEnd")
+        {
+            StartCoroutine(Fill());
+        }*/
+        
+        if(isStartBattery == true)
         {
             StartCoroutine(Fill());
         }
@@ -41,22 +50,43 @@ public class NodeColourChange : MonoBehaviour
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
         if (this.gameObject.name != "StartEnd"
-            && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.x)
-            || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.x)
-            || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.x)
-            || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.x && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.x))
+            && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
         {
-            if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == true
-                && previousObject2.GetComponent<NodeColourChange>().isNowOrrange == true
-                && previousObject3.GetComponent<NodeColourChange>().isNowOrrange == true
-                && previousObject4.GetComponent<NodeColourChange>().isNowOrrange == true)
+            if (previousObject1.GetComponent<PipeColourChange>().isPipeNowOrrange == true
+                && previousObject2.GetComponent<PipeColourChange>().isPipeNowOrrange == true
+                && previousObject3.GetComponent<PipeColourChange>().isPipeNowOrrange == true
+                && previousObject4.GetComponent<PipeColourChange>().isPipeNowOrrange == true)
             {
                 StartCoroutine(Fill());
             }
         }
-        
 
-        
+        if (this.gameObject.name != "StartEnd"
+            && (badAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (badAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (badAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
+            || (badAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
+        {
+            /*
+            if (previousObject1.GetComponent<PipeColourChange>().isNowOrrange == true
+                && previousObject2.GetComponent<PipeColourChange>().isNowOrrange == true
+                && previousObject3.GetComponent<PipeColourChange>().isNowOrrange == true
+                && previousObject4.GetComponent<PipeColourChange>().isNowOrrange == true)
+            {
+                StartCoroutine(Empty());
+            }
+            */
+            StartCoroutine(Empty());
+        }
+
+        if (this.gameObject.name == "StartEnd" && previousObject1.GetComponent<PipeColourChange>().isPipeNowOrrange == false)
+        {
+            StartCoroutine(Empty());
+        }
+
     }
     
 
@@ -64,13 +94,16 @@ public class NodeColourChange : MonoBehaviour
     {
         while (!isNowOrrange)
         {
-            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            //Vector1_776A8DBC
+            rend.material.SetFloat("_Lerp", Mathf.Lerp(0, 1, elapsedTime));
             elapsedTime += speed * Time.deltaTime;
 
             {
                 if (elapsedTime >= 1f)
                 {
                     isNowOrrange = true;
+                    elapsedTime = 0f;
                 }
                 else
                 {
@@ -83,23 +116,27 @@ public class NodeColourChange : MonoBehaviour
 
     IEnumerator Empty()
     {
-        while (!isNowEmpty)
+        while (isNowOrrange)
         {
             //Start at fill end, move to fill start
-            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillEndPosition, fillStartPosition, elapsedTime), 0));
+
+            //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(0f, -fillEndPosition, elapsedTime), 0));
+            rend.material.SetFloat("_Lerp", Mathf.Lerp(1, 0, elapsedTime));
             elapsedTime += speed * Time.deltaTime;
 
             {
                 if (elapsedTime >= 1f)
                 {
-                    isNowEmpty = true;
+                    isNowOrrange = false;
+                    elapsedTime = 0f;
                 }
                 else
                 {
 
                 }
-                yield return isNowEmpty;
+                
             }
+            yield return !isNowOrrange;
         }
     }
 }

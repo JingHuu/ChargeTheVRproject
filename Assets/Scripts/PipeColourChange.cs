@@ -9,12 +9,13 @@ public class PipeColourChange : MonoBehaviour
     public float fillStartPosition = 0f;
     public float fillEndPosition = .5f;
 
-    public bool isNowOrrange;
-    public bool isStartBattery;
+    public bool isPipeNowOrrange;
+    bool isStartBattery;
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
     public GameObject previousObject1;
     //Needed for nodes with mulitple inputs.
+    /*
     public GameObject previousObject2;
     public GameObject previousObject3;
     public GameObject previousObject4;
@@ -28,6 +29,7 @@ public class PipeColourChange : MonoBehaviour
     public float badAngle2 = 10;
     public float badAngle3 = 10;
     public float badAngle4 = 10;
+    */
 
     Renderer rend;
 
@@ -39,8 +41,8 @@ public class PipeColourChange : MonoBehaviour
         {
             StartCoroutine(Fill());
         }*/
-        
-        if(isStartBattery == true)
+
+        if (isStartBattery == true)
         {
             StartCoroutine(Fill());
         }
@@ -49,88 +51,88 @@ public class PipeColourChange : MonoBehaviour
     {
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
-        if (this.gameObject.name != "StartEnd"
+        if (this.gameObject.name != "StartEnd")
+            /*
             && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
+            */
         {
-            if (previousObject1.GetComponent<PipeColourChange>().isNowOrrange == true
+            if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == true)
+                /*
                 && previousObject2.GetComponent<PipeColourChange>().isNowOrrange == true
                 && previousObject3.GetComponent<PipeColourChange>().isNowOrrange == true
                 && previousObject4.GetComponent<PipeColourChange>().isNowOrrange == true)
+                */
             {
                 StartCoroutine(Fill());
             }
         }
 
-        if (this.gameObject.name != "StartEnd"
+        if (this.gameObject.name != "StartEnd")
+            /*
             && (badAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
-        {
-            if (previousObject1.GetComponent<PipeColourChange>().isNowOrrange == true
-                && previousObject2.GetComponent<PipeColourChange>().isNowOrrange == true
-                && previousObject3.GetComponent<PipeColourChange>().isNowOrrange == true
-                && previousObject4.GetComponent<PipeColourChange>().isNowOrrange == true)
-            {
-                StartCoroutine(Empty());
-            }
-        }
-        if (previousObject1.GetComponent<PipeColourChange>().isNowOrrange == false)
+            */
+        
+        if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == false)
         {
             StartCoroutine(Empty());
         }
 
     }
-    
+
 
     IEnumerator Fill()
     {
-        while (!isNowOrrange)
+        while (!isPipeNowOrrange)
         {
-            //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
             //Vector1_776A8DBC
-            rend.material.SetFloat("_Lerp", Mathf.Lerp(0, 1, elapsedTime));
+            //rend.material.SetFloat("_Lerp", Mathf.Lerp(0, 1, elapsedTime));
             elapsedTime += speed * Time.deltaTime;
 
             {
                 if (elapsedTime >= 1f)
                 {
-                    isNowOrrange = true;
+                    isPipeNowOrrange = true;
+                    elapsedTime = 0f;
                 }
                 else
                 {
 
                 }
-                yield return isNowOrrange;
+                yield return isPipeNowOrrange;
             }
         }
     }
 
     IEnumerator Empty()
     {
-        while (isNowOrrange)
+        while (isPipeNowOrrange)
         {
             //Start at fill end, move to fill start
 
-            //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(0f, -fillEndPosition, elapsedTime), 0));
-            rend.material.SetFloat("_Lerp", Mathf.Lerp(1, 0, elapsedTime));
+            rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(-fillEndPosition, 0f, elapsedTime), 0));
+            //rend.material.SetFloat("_Lerp", Mathf.Lerp(1, 0, elapsedTime));
             elapsedTime += speed * Time.deltaTime;
 
             {
-                if (elapsedTime <= 0f)
+                if (elapsedTime >= 1f)
                 {
-                    isNowOrrange = false;
+                    isPipeNowOrrange = false;
+                    elapsedTime = 0f;
                 }
                 else
                 {
 
                 }
-                
+
             }
-            yield return !isNowOrrange;
+            yield return !isPipeNowOrrange;
         }
     }
 }
