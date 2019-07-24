@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{c20b8d40-aac0-4c1b-a5df-afe75199a88f}">
+        <property name="name">
+            <value>NodeUnlock</value>
+        </property>
+        <relationship name="folder">
+            <destination>{6dec513b-a6fa-43fd-b3bf-c1a067a91043}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{5980f44e-86eb-432c-ab83-49c89f4a07c2}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{5980f44e-86eb-432c-ab83-49c89f4a07c2}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
