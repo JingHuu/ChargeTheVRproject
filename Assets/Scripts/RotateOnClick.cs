@@ -23,6 +23,9 @@ public class RotateOnClick : MonoBehaviour
         */
 
         transform.Rotate(0, 0, 45);
+
+        //AudioManager.NodeAngle = 0.2f;
+        //AudioManager.Playsound("RotateNode");
     }
     
     private void WhenTriggerPulled()
@@ -32,6 +35,7 @@ public class RotateOnClick : MonoBehaviour
         if (indexTrigger != 0.0f)
         {
             transform.Rotate(0, 0, 0);
+
         }
     }
 }

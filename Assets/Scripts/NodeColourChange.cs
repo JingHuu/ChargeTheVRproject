@@ -31,40 +31,43 @@ public class NodeColourChange : MonoBehaviour
 
     Renderer rend;
 
+    static float t = 0.0f;
+    public int NumberOfBatteries;
+
     void Start()
     {
         rend = GetComponent<Renderer>();
-        //StartCoroutine(Fill());
-        /*if (this.gameObject.name == "StartEnd")
+        AudioManager.audioProgression = 0f;
+        AudioManager.Playsound("music");
+
+        if (isStartBattery == true)
         {
             StartCoroutine(Fill());
-        }*/
-        
-        if(isStartBattery == true)
-        {
-            StartCoroutine(Fill());
+
         }
     }
     void Update()
     {
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
-        if (this.gameObject.name != "StartEnd"
+        if (isStartBattery == false
             && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
         {
-            if (previousObject1.GetComponent<PipeColourChange>().isPipeNowOrrange == true
-                && previousObject2.GetComponent<PipeColourChange>().isPipeNowOrrange == true
-                && previousObject3.GetComponent<PipeColourChange>().isPipeNowOrrange == true
-                && previousObject4.GetComponent<PipeColourChange>().isPipeNowOrrange == true)
+            if (previousObject1.GetComponent<PipeColourChange>().isPipeNowOrange == true
+                && previousObject2.GetComponent<PipeColourChange>().isPipeNowOrange == true
+                && previousObject3.GetComponent<PipeColourChange>().isPipeNowOrange == true
+                && previousObject4.GetComponent<PipeColourChange>().isPipeNowOrange == true)
             {
                 StartCoroutine(Fill());
+                AudioProgression();
             }
+
         }
 
-        if (this.gameObject.name != "StartEnd"
+        if (isStartBattery == false
             && (badAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
@@ -80,11 +83,8 @@ public class NodeColourChange : MonoBehaviour
             }
             */
             StartCoroutine(Empty());
-        }
 
-        if (this.gameObject.name == "StartEnd" && previousObject1.GetComponent<PipeColourChange>().isPipeNowOrrange == false)
-        {
-            StartCoroutine(Empty());
+
         }
 
     }
@@ -137,6 +137,48 @@ public class NodeColourChange : MonoBehaviour
                 
             }
             yield return !isNowOrrange;
+        }
+    }
+
+    public void AudioProgression()
+    {
+        t += 0.2f * Time.deltaTime;
+
+        if (NumberOfBatteries == 1)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 10f, t);
+        }
+        else if (NumberOfBatteries == 2)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 20f, t);
+        }
+        else if (NumberOfBatteries == 3)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 30f, t);
+        }
+        else if (NumberOfBatteries == 4)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 40f, t);
+        }
+        else if (NumberOfBatteries == 5)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 50f, t);
+        }
+        else if (NumberOfBatteries == 6)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 60f, t);
+        }
+        else if (NumberOfBatteries == 7)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 70f, t);
+        }
+        else if (NumberOfBatteries == 8)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 80f, t);
+        }
+        else if (NumberOfBatteries == 9)
+        {
+            AudioManager.audioProgression = Mathf.Lerp(0f, 90f, t);
         }
     }
 }
