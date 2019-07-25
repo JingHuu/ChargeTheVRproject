@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 1c9033b725b6c59488b93a734a55acbd
+guid: 4fc039a7685571f4e98f0b95857cae95
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: TransparentSphereMaterial
+    2100000: lambert2
     2300000: //RootNode
     3300000: //RootNode
-    4300000: TransparentSphereObject
+    4300000: pSphere6
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 50
+    globalScale: 150
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
