@@ -97,6 +97,8 @@ public class GoInput : MonoBehaviour
             visualDonut.SetActive(false);
         }
 
+        if (hit.point == Vector3.zero) return;
+        
         RotateOnClick rotateScript = hit.collider.gameObject.GetComponentInParent<RotateOnClick>();
         if (rotateScript != null && OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
         {
