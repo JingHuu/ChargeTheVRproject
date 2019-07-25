@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mat_SphereEffect
+  m_Name: MAT_SphereEffect
   m_Shader: {fileID: 4800000, guid: 5915992699400aa41a9904792feb1f38, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -34,4 +34,4 @@ Material:
     - Vector1_E6D0D715: -0.4
     - Vector1_F4661DDC: 12
     m_Colors:
-    - Vector3_92BC9618: {r: 9, g: 0.2, b: 0, a: 0}
+    - Vector3_92BC9618: {r: 2.23, g: 0.2, b: 0, a: 0}

@@ -13,16 +13,72 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114687229100244170}
-  - {fileID: 114693546739687198}
+  - {fileID: 114021121716630196}
+  - {fileID: 114304459817302934}
   EditorEvents:
-  - {fileID: 114414036018645348}
+  - {fileID: 114597379108928362}
+  - {fileID: 114783653325305420}
   MasterBanks:
-  - {fileID: 114693546739687198}
+  - {fileID: 114304459817302934}
   StringsBanks:
-  - {fileID: 114687229100244170}
-  stringsBankWriteTime: 636994741524839347
+  - {fileID: 114021121716630196}
+  stringsBankWriteTime: 636996654555608259
   cacheVersion: 3
+--- !u!114 &114021121716630196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\ChargeAudio\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636996654555608259
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 778
+  Exists: 1
+--- !u!114 &114304459817302934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: E:\Repos\Charge2\ChargeTheVRproject\Assets\ChargeAudio\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636996654555528461
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 25948320
+  Exists: 1
+--- !u!114 &114315867533373174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114414036018645348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,6 +102,89 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114505776311314024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114588225344426880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: Assets\ChargeAudio\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636996667139212383
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 722
+  Exists: 1
+--- !u!114 &114597379108928362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NodeRotate
+  guid: 6a5f24d44c4f2c46b18482182eea5626
+  Banks:
+  - {fileID: 114304459817302934}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114505776311314024}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &114607978483994736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Score
+  guid: b33dd9bb995efb4b9e66421d88b40ef1
+  Banks:
+  - {fileID: 114880303452756800}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114855880088037830}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 543562
 --- !u!114 &114687229100244170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,4 +224,64 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 13116
+  Exists: 1
+--- !u!114 &114783653325305420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Score
+  guid: b33dd9bb995efb4b9e66421d88b40ef1
+  Banks:
+  - {fileID: 114304459817302934}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114315867533373174}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 275478
+--- !u!114 &114855880088037830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114880303452756800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: E:\Repos\Charge2\ChargeTheVRproject\Assets\ChargeAudio\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636996667138943101
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 16200000
   Exists: 1

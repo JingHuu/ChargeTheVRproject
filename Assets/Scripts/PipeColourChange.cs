@@ -9,7 +9,7 @@ public class PipeColourChange : MonoBehaviour
     public float fillStartPosition = 0f;
     public float fillEndPosition = .5f;
 
-    public bool isPipeNowOrrange;
+    public bool isPipeNowOrange;
     bool isStartBattery;
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
@@ -36,11 +36,6 @@ public class PipeColourChange : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        //StartCoroutine(Fill());
-        /*if (this.gameObject.name == "StartEnd")
-        {
-            StartCoroutine(Fill());
-        }*/
 
         if (isStartBattery == true)
         {
@@ -51,7 +46,7 @@ public class PipeColourChange : MonoBehaviour
     {
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
-        if (this.gameObject.name != "StartEnd")
+        if (isStartBattery == false)
             /*
             && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
@@ -70,7 +65,7 @@ public class PipeColourChange : MonoBehaviour
             }
         }
 
-        if (this.gameObject.name != "StartEnd")
+        if (isStartBattery == false)
             /*
             && (badAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
@@ -88,7 +83,7 @@ public class PipeColourChange : MonoBehaviour
 
     IEnumerator Fill()
     {
-        while (!isPipeNowOrrange)
+        while (!isPipeNowOrange)
         {
             rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
             //Vector1_776A8DBC
@@ -98,21 +93,21 @@ public class PipeColourChange : MonoBehaviour
             {
                 if (elapsedTime >= 1f)
                 {
-                    isPipeNowOrrange = true;
+                    isPipeNowOrange = true;
                     elapsedTime = 0f;
                 }
                 else
                 {
 
                 }
-                yield return isPipeNowOrrange;
+                yield return isPipeNowOrange;
             }
         }
     }
 
     IEnumerator Empty()
     {
-        while (isPipeNowOrrange)
+        while (isPipeNowOrange)
         {
             //Start at fill end, move to fill start
 
@@ -123,7 +118,7 @@ public class PipeColourChange : MonoBehaviour
             {
                 if (elapsedTime >= 1f)
                 {
-                    isPipeNowOrrange = false;
+                    isPipeNowOrange = false;
                     elapsedTime = 0f;
                 }
                 else
@@ -132,7 +127,7 @@ public class PipeColourChange : MonoBehaviour
                 }
 
             }
-            yield return !isPipeNowOrrange;
+            yield return !isPipeNowOrange;
         }
     }
 }
