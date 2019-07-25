@@ -34,11 +34,14 @@ public class NodeColourChange : MonoBehaviour
     static float t = 0.0f;
     public int NumberOfBatteries;
 
+    private bool hasFired = false;
+    public bool isBattery = false;
+
     void Start()
     {
         rend = GetComponent<Renderer>();
         AudioManager.audioProgression = 0f;
-        AudioManager.Playsound("music");
+        // AudioManager.Playsound("music");
 
         if (isStartBattery == true)
         {
@@ -61,8 +64,13 @@ public class NodeColourChange : MonoBehaviour
                 && previousObject3.GetComponent<PipeColourChange>().isPipeNowOrange == true
                 && previousObject4.GetComponent<PipeColourChange>().isPipeNowOrange == true)
             {
-                StartCoroutine(Fill());
-                AudioProgression();
+                if (!hasFired)
+                {
+                    hasFired = true;
+                    StartCoroutine(Fill());
+                    AudioProgression();
+                }
+                
             }
 
         }
@@ -88,7 +96,7 @@ public class NodeColourChange : MonoBehaviour
         }
 
     }
-    
+  
 
     IEnumerator Fill()
     {
@@ -140,45 +148,51 @@ public class NodeColourChange : MonoBehaviour
         }
     }
 
-    public void AudioProgression()
+   public void AudioProgression()
     {
-        t += 0.05f * Time.deltaTime;
+        if(GetComponent<BatteryCheck>()) AudioManager.audioProgression += 10f; // this will activate one stem in the audio everytime a battery turns on
 
-        if (NumberOfBatteries == 1)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 10f, t);
-        }
-        else if (NumberOfBatteries == 2)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 20f, t);
-        }
-        else if (NumberOfBatteries == 3)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 30f, t);
-        }
-        else if (NumberOfBatteries == 4)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 40f, t);
-        }
-        else if (NumberOfBatteries == 5)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 50f, t);
-        }
-        else if (NumberOfBatteries == 6)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 60f, t);
-        }
-        else if (NumberOfBatteries == 7)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 70f, t);
-        }
-        else if (NumberOfBatteries == 8)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 80f, t);
-        }
-        else if (NumberOfBatteries == 9)
-        {
-            AudioManager.audioProgression = Mathf.Lerp(0f, 90f, t);
-        }
+        // old code below wsa not progressing properly
+
+        /* t += 0.05f * Time.deltaTime;
+
+         if (NumberOfBatteries == 1)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(0f, 10f, t);
+         }
+         else if (NumberOfBatteries == 2)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(10f, 20f, t);
+         }
+         else if (NumberOfBatteries == 3)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(20f, 30f, t);
+         }
+         else if (NumberOfBatteries == 4)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(30f, 40f, t);
+         }
+         else if (NumberOfBatteries == 5)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(40f, 50f, t);
+         }
+         else if (NumberOfBatteries == 6)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(50f, 60f, t);
+         }
+         else if (NumberOfBatteries == 7)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(60f, 70f, t);
+         }
+         else if (NumberOfBatteries == 8)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(70f, 80f, t);
+         }
+         else if (NumberOfBatteries == 9)
+         {
+             AudioManager.audioProgression = Mathf.Lerp(80f, 90f, t);
+         }
+          */
+        Debug.Log(AudioManager.audioProgression);
     }
 }

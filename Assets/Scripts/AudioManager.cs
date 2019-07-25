@@ -49,6 +49,8 @@ public class AudioManager : MonoBehaviour
         // connect to sound parameters
         music.getParameter("NodeUnlock", out StemUnlock);
         NodeRotation.getParameter("Rotate", out Rotate);
+
+        music.start();
     }
 
     void FixedUpdate()
@@ -61,7 +63,7 @@ public class AudioManager : MonoBehaviour
     // Below is the switch statement for all the possible sounds used in the game
     public static void Playsound(string clip)
     {
-        switch (clip) { case ("music"): music.start(); break; }
+        //switch (clip) { case ("music"): music.start(); break; }
         switch (clip) { case ("musicStop"): music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); break; }
         switch (clip) { case ("RotateNode"): NodeRotation.start(); break; }
     }
