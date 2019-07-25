@@ -31,8 +31,8 @@ public class NodeColourChange : MonoBehaviour
 
     Renderer rend;
 
-    static float t = 0.0f;
-    public int NumberOfBatteries;
+    //static float t = 0.0f;
+    //public int NumberOfBatteries;
 
     private bool hasFired = false;
     public bool isBattery = false;
@@ -150,49 +150,8 @@ public class NodeColourChange : MonoBehaviour
 
    public void AudioProgression()
     {
-        if(GetComponent<BatteryCheck>()) AudioManager.audioProgression += 10f; // this will activate one stem in the audio everytime a battery turns on
+        if(isBattery) AudioManager.audioProgression += 10f; // this will activate one stem in the audio everytime a battery turns on
 
-        // old code below wsa not progressing properly
-
-        /* t += 0.05f * Time.deltaTime;
-
-         if (NumberOfBatteries == 1)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(0f, 10f, t);
-         }
-         else if (NumberOfBatteries == 2)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(10f, 20f, t);
-         }
-         else if (NumberOfBatteries == 3)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(20f, 30f, t);
-         }
-         else if (NumberOfBatteries == 4)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(30f, 40f, t);
-         }
-         else if (NumberOfBatteries == 5)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(40f, 50f, t);
-         }
-         else if (NumberOfBatteries == 6)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(50f, 60f, t);
-         }
-         else if (NumberOfBatteries == 7)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(60f, 70f, t);
-         }
-         else if (NumberOfBatteries == 8)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(70f, 80f, t);
-         }
-         else if (NumberOfBatteries == 9)
-         {
-             AudioManager.audioProgression = Mathf.Lerp(80f, 90f, t);
-         }
-          */
         Debug.Log(AudioManager.audioProgression);
     }
 }
