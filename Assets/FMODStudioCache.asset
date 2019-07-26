@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 114304459817302934}
   StringsBanks:
   - {fileID: 114021121716630196}
-  stringsBankWriteTime: 636996654555608259
+  stringsBankWriteTime: 636997905926549046
   cacheVersion: 3
 --- !u!114 &114021121716630196
 MonoBehaviour:
@@ -37,12 +37,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\ChargeAudio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636996654555608259
+  lastModified: 636997905926549046
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 778
   Exists: 1
+--- !u!114 &114098720663480590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114250510018630064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114303987050684412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114304459817302934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,12 +105,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: E:\Repos\Charge2\ChargeTheVRproject\Assets\ChargeAudio\Build\Desktop\Master
     Bank.bank
-  lastModified: 636996654555528461
+  lastModified: 636997905926489254
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 25948320
+    Value: 25948480
   Exists: 1
+--- !u!114 &114306741370207124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114315867533373174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,6 +142,38 @@ MonoBehaviour:
   Name: NodeUnlock
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114348620983724650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114361063517086926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114414036018645348
 MonoBehaviour:
@@ -102,7 +198,39 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114492383106510624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114505776311314024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114583926793720960
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +285,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114505776311314024}
+  - {fileID: 114098720663480590}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -185,6 +313,54 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 543562
+--- !u!114 &114632313747936180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114635514386840290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114654878290873650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114687229100244170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,7 +421,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114315867533373174}
+  - {fileID: 114951286909174920}
   MinDistance: 0
   MaxDistance: 0
   Length: 275478
@@ -262,6 +438,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: NodeUnlock
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114856655355458680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
   Min: 0
   Max: 1
   Default: 0
@@ -285,3 +477,35 @@ MonoBehaviour:
   - Name: Desktop
     Value: 16200000
   Exists: 1
+--- !u!114 &114951286909174920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114956417635043770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0

@@ -31,9 +31,6 @@ public class NodeColourChange : MonoBehaviour
 
     Renderer rend;
 
-    //static float t = 0.0f;
-    //public int NumberOfBatteries;
-
     private bool hasFired = false;
     public bool isBattery = false;
 
@@ -41,7 +38,6 @@ public class NodeColourChange : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         AudioManager.audioProgression = 0f;
-        // AudioManager.Playsound("music");
 
         if (isStartBattery == true)
         {
@@ -81,18 +77,7 @@ public class NodeColourChange : MonoBehaviour
             || (badAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
         {
-            /*
-            if (previousObject1.GetComponent<PipeColourChange>().isNowOrrange == true
-                && previousObject2.GetComponent<PipeColourChange>().isNowOrrange == true
-                && previousObject3.GetComponent<PipeColourChange>().isNowOrrange == true
-                && previousObject4.GetComponent<PipeColourChange>().isNowOrrange == true)
-            {
-                StartCoroutine(Empty());
-            }
-            */
             StartCoroutine(Empty());
-
-
         }
 
     }
