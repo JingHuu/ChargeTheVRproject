@@ -24,7 +24,7 @@ public class RotateOnClick : MonoBehaviour
 
         transform.Rotate(0, 0, 45);
 
-        //AudioManager.rotate = .7f;    // this line is not doing what it should
+        AudioManager.rotate = .2f;    // this line is not doing what it should
         FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);
     }
     
