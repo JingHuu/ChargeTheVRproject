@@ -480,7 +480,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -560,7 +560,7 @@ PrefabInstance:
     - target: {fileID: 6562680212723068374, guid: c5e385b7014430c42bd66f02928edcbc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6562680212723068373, guid: c5e385b7014430c42bd66f02928edcbc,
         type: 3}
@@ -849,7 +849,7 @@ PrefabInstance:
     - target: {fileID: 5139665674423410752, guid: 509c47f0122b1a049b6dff73693b14d7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5139665674423410758, guid: 509c47f0122b1a049b6dff73693b14d7,
         type: 3}
@@ -1273,10 +1273,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lerpTime: 20
-  blue: {r: 0.6007476, g: 0.8829289, b: 0.9433962, a: 1}
-  yellow: {r: 0.9339623, g: 0.8232213, b: 0.3568441, a: 0}
+  blue: {r: 0.18427375, g: 0.73375654, b: 0.9528302, a: 1}
+  yellow: {r: 0.990566, g: 0.7155455, b: 0.19157171, a: 0}
   orange: {r: 0.9245283, g: 0.42147616, b: 0.23113208, a: 0}
-  red: {r: 1, g: 0.15294118, b: 0, a: 0}
+  red: {r: 1, g: 0.27048707, b: 0, a: 0}
 --- !u!23 &2141584041
 MeshRenderer:
   m_ObjectHideFlags: 0

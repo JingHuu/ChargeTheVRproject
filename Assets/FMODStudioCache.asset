@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114021121716630196}
-  - {fileID: 114304459817302934}
+  - {fileID: 114727111699090520}
   EditorEvents:
   - {fileID: 114597379108928362}
   - {fileID: 114783653325305420}
   MasterBanks:
-  - {fileID: 114304459817302934}
+  - {fileID: 114727111699090520}
   StringsBanks:
   - {fileID: 114021121716630196}
-  stringsBankWriteTime: 636997905926549046
+  stringsBankWriteTime: 636998241582145928
   cacheVersion: 3
 --- !u!114 &114021121716630196
 MonoBehaviour:
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\ChargeAudio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636997905926549046
+  lastModified: 636998241582145928
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -59,6 +59,46 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114142835551669700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114217925333215112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/NodeRotate
+  guid: 0cacf96cecfb7c4bbf8de32602b7aa1f
+  Banks:
+  - {fileID: 114727111699090520}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 114307823287476978}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &114250510018630064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +166,22 @@ MonoBehaviour:
   Name: NodeUnlock
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114307823287476978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114315867533373174
 MonoBehaviour:
@@ -198,6 +254,22 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &114431045039223110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114492383106510624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +301,22 @@ MonoBehaviour:
   Name: Rotate
   Min: 0
   Max: 1
+  Default: 0
+--- !u!114 &114515296913275222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
   Default: 0
 --- !u!114 &114583926793720960
 MonoBehaviour:
@@ -280,12 +368,12 @@ MonoBehaviour:
   Path: event:/SFX/NodeRotate
   guid: 6a5f24d44c4f2c46b18482182eea5626
   Banks:
-  - {fileID: 114304459817302934}
+  - {fileID: 114727111699090520}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 114098720663480590}
+  - {fileID: 114652798246391036}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
@@ -345,7 +433,39 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114652798246391036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114654878290873650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114686973577267230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -401,6 +521,42 @@ MonoBehaviour:
   - Name: Desktop
     Value: 13116
   Exists: 1
+--- !u!114 &114727111699090520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: E:\Repos\Unity2\ChargeTheVRproject\Assets\ChargeAudio\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636998241582096071
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 25945312
+  Exists: 1
+--- !u!114 &114753609107454612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114783653325305420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,12 +572,12 @@ MonoBehaviour:
   Path: event:/Music/Score
   guid: b33dd9bb995efb4b9e66421d88b40ef1
   Banks:
-  - {fileID: 114304459817302934}
+  - {fileID: 114727111699090520}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114951286909174920}
+  - {fileID: 114142835551669700}
   MinDistance: 0
   MaxDistance: 0
   Length: 275478

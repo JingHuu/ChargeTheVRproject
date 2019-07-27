@@ -8,14 +8,10 @@ public class AudioManager : MonoBehaviour
     public static FMOD.Studio.EventInstance music;// game music loop
     public static FMOD.Studio.EventInstance NodeRotation; // node rotate sfx
 
-    public static float NodeAngle;
+    public static float rotate;
     public static float audioProgression;
-    /*
-     *  BELOW IS A SAMPLE, CHANGE FOR CORRECT NAMES
-     *  
-    public static FMOD.Studio.EventInstance score1, score2, score3; // Game sounds from Score bank
-    public static FMOD.Studio.EventInstance atmos1, atmos2, atmos3; // Game sounds from Atmos bank
-    */
+
+
     public static FMOD.Studio.ParameterInstance StemUnlock;
     public static FMOD.Studio.ParameterInstance Rotate;
 
@@ -43,8 +39,7 @@ public class AudioManager : MonoBehaviour
         // music
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score");
         // sfx
-        NodeRotation = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/NodeRotate");
-        
+
 
         // connect to sound parameters
         music.getParameter("NodeUnlock", out StemUnlock);
@@ -56,7 +51,7 @@ public class AudioManager : MonoBehaviour
     void FixedUpdate()
     {
         StemUnlock.setValue(audioProgression);
-        Rotate.setValue(NodeAngle);
+        Rotate.setValue(rotate);
     }
 
 
