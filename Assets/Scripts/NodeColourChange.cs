@@ -136,7 +136,7 @@ public class NodeColourChange : MonoBehaviour
    public void AudioProgression()
     {
         if(isBattery) AudioManager.audioProgression += 10f; // this will activate one stem in the audio everytime a battery turns on
-
+        
         Debug.Log(AudioManager.audioProgression);
     }
 }

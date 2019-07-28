@@ -7,6 +7,7 @@ public class SphereColourChange : MonoBehaviour
     [SerializeField]
     private float lerpTime = 10f;
     private float time;
+    private float previousAudioProgression;
 
     Renderer rend;
 
@@ -21,10 +22,10 @@ public class SphereColourChange : MonoBehaviour
         rend = GetComponent<Renderer>();
         time = 0f;
 
-        _blue = new Vector4(.3f, .7f, 1.5f, 0f);
-        _yellow = new Vector4(.6f, .3f, 0, 0);
-        _darkorange = new Vector4(1f, .2f, 0f, 0f);
-        _brightorange = new Vector4(2.5f, .7f, 0, 0);
+        _blue = new Vector3(.3f, .7f, 1.5f);
+        _yellow = new Vector3(.6f, .3f, 0);
+        _darkorange = new Vector3(1f, .2f, 0f);
+        _brightorange = new Vector3(2.5f, .7f, 0);
 
         // initial emmissive colour
         rend.material.SetVector("_ColourIntensity", _blue);
@@ -39,6 +40,13 @@ public class SphereColourChange : MonoBehaviour
 
         rend.material.SetVector("_ColourIntensity", new Vector4(Mathf.Lerp(_blue.x, _yellow.x, t), Mathf.Lerp(_blue.y, _yellow.y, t), Mathf.Lerp(_blue.z, _yellow.z, t), Mathf.Lerp(_blue.w, _yellow.w, t)));
         */
+
+        if (AudioManager.audioProgression != previousAudioProgression)
+        {
+            time = 0;
+        }
+
+        previousAudioProgression = AudioManager.audioProgression;
     }
 
     private void SphereEmmissiveChange()
@@ -46,17 +54,26 @@ public class SphereColourChange : MonoBehaviour
         time += Time.deltaTime;
         float t = time / lerpTime;
 
+        Vector3 c = rend.material.GetVector("_ColourIntensity");
+
         if (AudioManager.audioProgression > 9f)
         {
-            rend.material.SetVector("_ColourIntensity", new Vector4(Mathf.Lerp(_blue.x, _yellow.x, t), Mathf.Lerp(_blue.y, _yellow.y, t), Mathf.Lerp(_blue.z, _yellow.z, t), Mathf.Lerp(_blue.w, _yellow.w, t)));
+            // blue yellow
+            rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _yellow, t));
         }
         else if (AudioManager.audioProgression > 49f)
         {
-            rend.material.SetVector("_ColourIntensity", new Vector4(Mathf.Lerp(_yellow.x, _darkorange.x, t), Mathf.Lerp(_yellow.y, _darkorange.y, t), Mathf.Lerp(_yellow.z, _darkorange.z, t), Mathf.Lerp(_yellow.w, _darkorange.w, t)));
+            // yellow darkO
+            rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _darkorange, t));
         }
         else if (AudioManager.audioProgression > 59f)
         {
-            rend.material.SetVector("_ColourIntensity", new Vector4(Mathf.Lerp(_darkorange.x, _brightorange.x, t), Mathf.Lerp(_darkorange.y, _brightorange.y, t), Mathf.Lerp(_darkorange.z, _brightorange.z, t), Mathf.Lerp(_darkorange.w, _brightorange.w, t)));
+            // darkO brightO
+            rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _brightorange, t));
+        }
+        else
+        {
+            rend.material.SetVector("_ColourIntensity", _blue);
         }
         
     }
