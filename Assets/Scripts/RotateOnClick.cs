@@ -5,24 +5,21 @@ using UnityEngine;
 public class RotateOnClick : MonoBehaviour
 {
     //public float x, y, z;
+    private NodeColourChange nodeChange;
 
+    private void Start()
+    {
+        nodeChange = GetComponentInChildren<NodeColourChange>();
+    }
     //Click left mouse button to rotate target
     public void OnMouseDown()
     {
-        /*
-        Transform[] temp = transform.GetComponentsInChildren<Transform>();
-
-        //for loop
-        for (int i = 0; i < temp.Length -1; i++)
+        
+        if(!nodeChange.hasFired)
         {
-            transform.GetChild(i).rotation *= Quaternion.AngleAxis(45, transform.forward);
+            transform.Rotate(0, 0, 45);
         }
-       
-        //transform.GetChild(4).rotation *= Quaternion.AngleAxis(45, transform.forward);
-
-        */
-
-        transform.Rotate(0, 0, 45);
+        
 
         AudioManager.rotate = .2f;    // this line is not doing what it should
         FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);

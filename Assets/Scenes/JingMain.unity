@@ -936,7 +936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1486659439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,8 +1347,8 @@ GameObject:
   m_Component:
   - component: {fileID: 49694562374650369}
   - component: {fileID: 49694562375453291}
-  - component: {fileID: 49694562374620770}
   - component: {fileID: 49694562376550443}
+  - component: {fileID: 49694562374620770}
   m_Layer: 0
   m_Name: FourWay_Link_1
   m_TagString: Untagged
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -1378,14 +1378,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675919}
   previousObject3: {fileID: 8718356408773675919}
   previousObject4: {fileID: 8718356408773675919}
-  triggerAngle1: 45
-  triggerAngle2: 135
-  triggerAngle3: 225
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 90
-  badAngle3: 180
-  badAngle4: 270
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374620771
 GameObject:
@@ -1419,7 +1413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -1428,14 +1422,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675637}
   previousObject3: {fileID: 8718356408773675579}
   previousObject4: {fileID: 8718356408773675579}
-  triggerAngle1: 45
-  triggerAngle2: 135
-  triggerAngle3: 225
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 90
-  badAngle3: 180
-  badAngle4: 270
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374620773
 GameObject:
@@ -1469,7 +1457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -1478,14 +1466,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675575}
   previousObject3: {fileID: 8718356408773675641}
   previousObject4: {fileID: 8718356408773675641}
-  triggerAngle1: 45
-  triggerAngle2: 135
-  triggerAngle3: 225
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 90
-  badAngle3: 180
-  badAngle4: 270
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374620775
 GameObject:
@@ -1564,7 +1546,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620783
 GameObject:
@@ -1625,7 +1607,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!114 &49694562374620788
 MonoBehaviour:
@@ -1650,7 +1632,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620793
 GameObject:
@@ -1861,7 +1843,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620939
 GameObject:
@@ -1893,7 +1875,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620941
 GameObject:
@@ -1955,7 +1937,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620945
 GameObject:
@@ -2017,7 +1999,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620949
 GameObject:
@@ -2049,7 +2031,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620951
 GameObject:
@@ -2083,7 +2065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -2092,14 +2074,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675917}
   previousObject3: {fileID: 8718356408773675917}
   previousObject4: {fileID: 8718356408773675917}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374620953
 GameObject:
@@ -2250,7 +2226,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620963
 GameObject:
@@ -2281,7 +2257,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620965
 GameObject:
@@ -2312,7 +2288,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620967
 GameObject:
@@ -2343,7 +2319,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620969
 GameObject:
@@ -2404,7 +2380,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620973
 GameObject:
@@ -2465,7 +2441,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620977
 GameObject:
@@ -2616,7 +2592,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620987
 GameObject:
@@ -2647,7 +2623,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620989
 GameObject:
@@ -2678,7 +2654,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620991
 GameObject:
@@ -2709,7 +2685,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620993
 GameObject:
@@ -2771,7 +2747,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374620997
 GameObject:
@@ -2832,7 +2808,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621001
 GameObject:
@@ -2895,7 +2871,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621005
 GameObject:
@@ -2958,7 +2934,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621009
 GameObject:
@@ -2991,7 +2967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3000,14 +2976,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675933}
   previousObject3: {fileID: 8718356408773675933}
   previousObject4: {fileID: 8718356408773675933}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621011
 GameObject:
@@ -3040,7 +3010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3049,14 +3019,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675597}
   previousObject3: {fileID: 8718356408773675597}
   previousObject4: {fileID: 8718356408773675597}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621013
 GameObject:
@@ -3089,7 +3053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3098,14 +3062,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675611}
   previousObject3: {fileID: 8718356408773675611}
   previousObject4: {fileID: 8718356408773675611}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621015
 GameObject:
@@ -3138,7 +3096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3147,14 +3105,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675645}
   previousObject3: {fileID: 8718356408773675645}
   previousObject4: {fileID: 8718356408773675645}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621017
 GameObject:
@@ -3187,7 +3139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3196,14 +3148,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675635}
   previousObject3: {fileID: 8718356408773675635}
   previousObject4: {fileID: 8718356408773675635}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621019
 GameObject:
@@ -3236,7 +3182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3245,14 +3191,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675609}
   previousObject3: {fileID: 8718356408773675609}
   previousObject4: {fileID: 8718356408773675609}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621021
 GameObject:
@@ -3285,7 +3225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3294,14 +3234,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675585}
   previousObject3: {fileID: 8718356408773675585}
   previousObject4: {fileID: 8718356408773675585}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621023
 GameObject:
@@ -3334,7 +3268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3343,14 +3277,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675935}
   previousObject3: {fileID: 8718356408773675935}
   previousObject4: {fileID: 8718356408773675935}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621025
 GameObject:
@@ -3384,7 +3312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3393,14 +3321,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675573}
   previousObject3: {fileID: 8718356408773675573}
   previousObject4: {fileID: 8718356408773675573}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621027
 GameObject:
@@ -3434,7 +3356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3443,14 +3365,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675577}
   previousObject3: {fileID: 8718356408773675577}
   previousObject4: {fileID: 8718356408773675577}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621029
 GameObject:
@@ -3484,7 +3400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3493,14 +3409,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675565}
   previousObject3: {fileID: 8718356408773675565}
   previousObject4: {fileID: 8718356408773675565}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621031
 GameObject:
@@ -3534,7 +3444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3543,14 +3453,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675947}
   previousObject3: {fileID: 8718356408773675947}
   previousObject4: {fileID: 8718356408773675947}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621033
 GameObject:
@@ -3584,7 +3488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3593,14 +3497,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675567}
   previousObject3: {fileID: 8718356408773675567}
   previousObject4: {fileID: 8718356408773675567}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621035
 GameObject:
@@ -3634,7 +3532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3643,14 +3541,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675561}
   previousObject3: {fileID: 8718356408773675561}
   previousObject4: {fileID: 8718356408773675561}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621037
 GameObject:
@@ -3684,7 +3576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3693,14 +3585,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675923}
   previousObject3: {fileID: 8718356408773675923}
   previousObject4: {fileID: 8718356408773675923}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621039
 GameObject:
@@ -3734,7 +3620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3743,14 +3629,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675601}
   previousObject3: {fileID: 8718356408773675601}
   previousObject4: {fileID: 8718356408773675601}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621041
 GameObject:
@@ -3784,7 +3664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3793,14 +3673,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675619}
   previousObject3: {fileID: 8718356408773675619}
   previousObject4: {fileID: 8718356408773675619}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621043
 GameObject:
@@ -3834,7 +3708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3843,14 +3717,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675931}
   previousObject3: {fileID: 8718356408773675931}
   previousObject4: {fileID: 8718356408773675931}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621045
 GameObject:
@@ -3884,7 +3752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3893,14 +3761,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675925}
   previousObject3: {fileID: 8718356408773675925}
   previousObject4: {fileID: 8718356408773675925}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621047
 GameObject:
@@ -3934,7 +3796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3943,14 +3805,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675913}
   previousObject3: {fileID: 8718356408773675913}
   previousObject4: {fileID: 8718356408773675913}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621049
 GameObject:
@@ -3984,7 +3840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -3993,14 +3849,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675559}
   previousObject3: {fileID: 8718356408773675559}
   previousObject4: {fileID: 8718356408773675559}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621051
 GameObject:
@@ -4034,7 +3884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -4043,14 +3893,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675927}
   previousObject3: {fileID: 8718356408773675927}
   previousObject4: {fileID: 8718356408773675927}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621053
 GameObject:
@@ -4062,8 +3906,8 @@ GameObject:
   m_Component:
   - component: {fileID: 49694562374650653}
   - component: {fileID: 49694562375453649}
-  - component: {fileID: 49694562374621054}
   - component: {fileID: 49694562376550801}
+  - component: {fileID: 49694562374621054}
   m_Layer: 0
   m_Name: TwoWay_Link2_1 20
   m_TagString: Untagged
@@ -4084,7 +3928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -4093,14 +3937,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675627}
   previousObject3: {fileID: 8718356408773675627}
   previousObject4: {fileID: 8718356408773675627}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621055
 GameObject:
@@ -4134,7 +3972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -4143,14 +3981,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675947}
   previousObject3: {fileID: 8718356408773675947}
   previousObject4: {fileID: 8718356408773675947}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621057
 GameObject:
@@ -4271,7 +4103,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!114 &49694562374621065
 MonoBehaviour:
@@ -4286,7 +4118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -4295,14 +4127,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675593}
   previousObject3: {fileID: 8718356408773675593}
   previousObject4: {fileID: 8718356408773675593}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!135 &49694562374621066
 SphereCollider:
@@ -4315,7 +4141,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!135 &49694562374621068
 SphereCollider:
@@ -4328,7 +4154,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621069
 GameObject:
@@ -4389,7 +4215,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621073
 GameObject:
@@ -4511,7 +4337,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621081
 GameObject:
@@ -4542,7 +4368,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621083
 GameObject:
@@ -4573,7 +4399,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621085
 GameObject:
@@ -4634,7 +4460,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!114 &49694562374621089
 MonoBehaviour:
@@ -4649,7 +4475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -4658,14 +4484,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675945}
   previousObject3: {fileID: 8718356408773675945}
   previousObject4: {fileID: 8718356408773675945}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!114 &49694562374621090
 MonoBehaviour:
@@ -4690,7 +4510,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!114 &49694562374621098
 MonoBehaviour:
@@ -4715,7 +4535,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!114 &49694562374621102
 MonoBehaviour:
@@ -4740,7 +4560,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!114 &49694562374621106
 MonoBehaviour:
@@ -4765,7 +4585,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!114 &49694562374621110
 MonoBehaviour:
@@ -4790,7 +4610,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621121
 GameObject:
@@ -5112,7 +4932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5121,14 +4941,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675911}
   previousObject3: {fileID: 8718356408773675595}
   previousObject4: {fileID: 8718356408773675595}
-  triggerAngle1: 45
-  triggerAngle2: 45
-  triggerAngle3: 45
-  triggerAngle4: 45
-  badAngle1: 90
-  badAngle2: 90
-  badAngle3: 90
-  badAngle4: 90
+  triggerAngle: 45
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621155
 GameObject:
@@ -5162,7 +4976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5171,14 +4985,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675591}
   previousObject3: {fileID: 8718356408773675591}
   previousObject4: {fileID: 8718356408773675591}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621157
 GameObject:
@@ -5212,7 +5020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5221,14 +5029,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675921}
   previousObject3: {fileID: 8718356408773675615}
   previousObject4: {fileID: 8718356408773675615}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621159
 GameObject:
@@ -5262,7 +5064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5271,14 +5073,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675589}
   previousObject3: {fileID: 8718356408773675589}
   previousObject4: {fileID: 8718356408773675589}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621161
 GameObject:
@@ -5312,7 +5108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5321,14 +5117,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675647}
   previousObject3: {fileID: 8718356408773675647}
   previousObject4: {fileID: 8718356408773675647}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621163
 GameObject:
@@ -5362,7 +5152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5371,14 +5161,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675613}
   previousObject3: {fileID: 8718356408773675613}
   previousObject4: {fileID: 8718356408773675613}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621165
 GameObject:
@@ -5412,7 +5196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5421,14 +5205,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675569}
   previousObject3: {fileID: 8718356408773675915}
   previousObject4: {fileID: 8718356408773675915}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621167
 GameObject:
@@ -5462,7 +5240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5471,14 +5249,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675583}
   previousObject3: {fileID: 8718356408773675639}
   previousObject4: {fileID: 8718356408773675639}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621169
 GameObject:
@@ -5584,7 +5356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5593,14 +5365,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675633}
   previousObject3: {fileID: 8718356408773675621}
   previousObject4: {fileID: 8718356408773675621}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621179
 GameObject:
@@ -5634,7 +5400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5643,14 +5409,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675563}
   previousObject3: {fileID: 8718356408773675563}
   previousObject4: {fileID: 8718356408773675563}
-  triggerAngle1: 135
-  triggerAngle2: 135
-  triggerAngle3: 135
-  triggerAngle4: 135
-  badAngle1: 180
-  badAngle2: 180
-  badAngle3: 180
-  badAngle4: 180
+  triggerAngle: 135
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621181
 GameObject:
@@ -5684,7 +5444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5693,14 +5453,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675599}
   previousObject3: {fileID: 8718356408773675599}
   previousObject4: {fileID: 8718356408773675599}
-  triggerAngle1: 225
-  triggerAngle2: 225
-  triggerAngle3: 225
-  triggerAngle4: 225
-  badAngle1: 270
-  badAngle2: 270
-  badAngle3: 270
-  badAngle4: 270
+  triggerAngle: 225
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621183
 GameObject:
@@ -5734,7 +5488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elapsedTime: 0
-  speed: 0.5
+  speed: 1.5
   fillStartPosition: 0
   fillEndPosition: 0.5
   isNowOrrange: 0
@@ -5743,14 +5497,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675571}
   previousObject3: {fileID: 8718356408773675571}
   previousObject4: {fileID: 8718356408773675571}
-  triggerAngle1: 315
-  triggerAngle2: 315
-  triggerAngle3: 315
-  triggerAngle4: 315
-  badAngle1: 0
-  badAngle2: 0
-  badAngle3: 0
-  badAngle4: 0
+  triggerAngle: 315
+  hasFired: 0
   isBattery: 0
 --- !u!1 &49694562374621313
 GameObject:
@@ -6465,7 +6213,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621419
 GameObject:
@@ -6496,7 +6244,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621421
 GameObject:
@@ -6527,7 +6275,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!1 &49694562374621423
 GameObject:
@@ -6678,7 +6426,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!135 &49694562374621442
 SphereCollider:
@@ -6691,7 +6439,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!135 &49694562374621443
 SphereCollider:
@@ -6704,7 +6452,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!135 &49694562374621444
 SphereCollider:
@@ -6717,7 +6465,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0, z: 0.25}
 --- !u!4 &49694562374650369
 Transform:
@@ -15453,14 +15201,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675909}
   previousObject3: {fileID: 8718356408773675909}
   previousObject4: {fileID: 8718356408773675909}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135875
 GameObject:
@@ -15551,14 +15293,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675587}
   previousObject3: {fileID: 8718356408773675587}
   previousObject4: {fileID: 8718356408773675587}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135883
 GameObject:
@@ -15617,14 +15353,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675623}
   previousObject3: {fileID: 8718356408773675623}
   previousObject4: {fileID: 8718356408773675623}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135887
 GameObject:
@@ -15699,14 +15429,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675905}
   previousObject3: {fileID: 8718356408773675905}
   previousObject4: {fileID: 8718356408773675905}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135895
 GameObject:
@@ -15749,14 +15473,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675929}
   previousObject3: {fileID: 8718356408773675929}
   previousObject4: {fileID: 8718356408773675929}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135897
 GameObject:
@@ -15815,14 +15533,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675607}
   previousObject3: {fileID: 8718356408773675605}
   previousObject4: {fileID: 8718356408773675605}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135901
 GameObject:
@@ -15881,14 +15593,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675603}
   previousObject3: {fileID: 8718356408773675603}
   previousObject4: {fileID: 8718356408773675603}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135937
 GameObject:
@@ -16345,14 +16051,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675555}
   previousObject3: {fileID: 8718356408773675553}
   previousObject4: {fileID: 8718356408773675617}
-  triggerAngle1: 7.2
-  triggerAngle2: 7.2
-  triggerAngle3: 7.2
-  triggerAngle4: 7.2
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135987
 GameObject:
@@ -16411,14 +16111,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8718356408773675557}
   previousObject3: {fileID: 8718356408773675557}
   previousObject4: {fileID: 8718356408773675557}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135991
 GameObject:
@@ -16495,14 +16189,8 @@ MonoBehaviour:
   previousObject2: {fileID: 8431212670029135997}
   previousObject3: {fileID: 8431212670029135997}
   previousObject4: {fileID: 8431212670029135997}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
+  triggerAngle: 0
+  hasFired: 0
   isBattery: 1
 --- !u!1 &8431212670029135999
 GameObject:
@@ -21976,7 +21664,6 @@ GameObject:
   - component: {fileID: 8718356408773580289}
   - component: {fileID: 8718356408770713121}
   - component: {fileID: 8718356408773675675}
-  - component: {fileID: 8718356408773675554}
   - component: {fileID: 8718356408771679457}
   m_Layer: 0
   m_Name: HorizontalPipe13
@@ -21985,37 +21672,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675553}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621037}
-  previousObject2: {fileID: 49694562374621037}
-  previousObject3: {fileID: 49694562374621037}
-  previousObject4: {fileID: 49694562374621037}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675555
 GameObject:
   m_ObjectHideFlags: 0
@@ -22027,7 +21683,6 @@ GameObject:
   - component: {fileID: 8718356408773580291}
   - component: {fileID: 8718356408770713123}
   - component: {fileID: 8718356408773675671}
-  - component: {fileID: 8718356408773675556}
   - component: {fileID: 8718356408771679459}
   m_Layer: 0
   m_Name: HorizontalPipe14
@@ -22036,37 +21691,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675555}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621005}
-  previousObject2: {fileID: 49694562374621005}
-  previousObject3: {fileID: 49694562374621005}
-  previousObject4: {fileID: 49694562374621005}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675557
 GameObject:
   m_ObjectHideFlags: 0
@@ -22078,7 +21702,6 @@ GameObject:
   - component: {fileID: 8718356408773580293}
   - component: {fileID: 8718356408770713125}
   - component: {fileID: 8718356408773675687}
-  - component: {fileID: 8718356408773675558}
   - component: {fileID: 8718356408771679461}
   m_Layer: 0
   m_Name: HorizontalPipe15
@@ -22087,37 +21710,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675557}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621161}
-  previousObject2: {fileID: 49694562374621161}
-  previousObject3: {fileID: 49694562374621161}
-  previousObject4: {fileID: 49694562374621161}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675559
 GameObject:
   m_ObjectHideFlags: 0
@@ -22129,7 +21721,6 @@ GameObject:
   - component: {fileID: 8718356408773580295}
   - component: {fileID: 8718356408770713127}
   - component: {fileID: 8718356408773675688}
-  - component: {fileID: 8718356408773675560}
   - component: {fileID: 8718356408771679463}
   m_Layer: 0
   m_Name: HorizontalPipe16
@@ -22138,37 +21729,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675559}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135989}
-  previousObject2: {fileID: 8431212670029135989}
-  previousObject3: {fileID: 8431212670029135989}
-  previousObject4: {fileID: 8431212670029135989}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675561
 GameObject:
   m_ObjectHideFlags: 0
@@ -22180,7 +21740,6 @@ GameObject:
   - component: {fileID: 8718356408773580297}
   - component: {fileID: 8718356408770713129}
   - component: {fileID: 8718356408773675682}
-  - component: {fileID: 8718356408773675562}
   - component: {fileID: 8718356408771679465}
   m_Layer: 0
   m_Name: HorizontalPipe1
@@ -22189,37 +21748,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675561}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621167}
-  previousObject2: {fileID: 49694562374621167}
-  previousObject3: {fileID: 49694562374621167}
-  previousObject4: {fileID: 49694562374621167}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675563
 GameObject:
   m_ObjectHideFlags: 0
@@ -22231,7 +21759,6 @@ GameObject:
   - component: {fileID: 8718356408773580299}
   - component: {fileID: 8718356408770713131}
   - component: {fileID: 8718356408773675690}
-  - component: {fileID: 8718356408773675564}
   - component: {fileID: 8718356408771679467}
   m_Layer: 0
   m_Name: HorizontalPipe10
@@ -22240,37 +21767,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675563}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621041}
-  previousObject2: {fileID: 49694562374621041}
-  previousObject3: {fileID: 49694562374621041}
-  previousObject4: {fileID: 49694562374621041}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675565
 GameObject:
   m_ObjectHideFlags: 0
@@ -22282,7 +21778,6 @@ GameObject:
   - component: {fileID: 8718356408773580301}
   - component: {fileID: 8718356408770713133}
   - component: {fileID: 8718356408773675691}
-  - component: {fileID: 8718356408773675566}
   - component: {fileID: 8718356408771679469}
   m_Layer: 0
   m_Name: HorizontalPipe11
@@ -22291,37 +21786,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675565}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621179}
-  previousObject2: {fileID: 49694562374621179}
-  previousObject3: {fileID: 49694562374621179}
-  previousObject4: {fileID: 49694562374621179}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675567
 GameObject:
   m_ObjectHideFlags: 0
@@ -22333,7 +21797,6 @@ GameObject:
   - component: {fileID: 8718356408773580303}
   - component: {fileID: 8718356408770713135}
   - component: {fileID: 8718356408773675659}
-  - component: {fileID: 8718356408773675568}
   - component: {fileID: 8718356408771679471}
   m_Layer: 0
   m_Name: HorizontalPipe12
@@ -22342,37 +21805,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675567}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135885}
-  previousObject2: {fileID: 8431212670029135885}
-  previousObject3: {fileID: 8431212670029135885}
-  previousObject4: {fileID: 8431212670029135885}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675569
 GameObject:
   m_ObjectHideFlags: 0
@@ -22384,7 +21816,6 @@ GameObject:
   - component: {fileID: 8718356408773580305}
   - component: {fileID: 8718356408770713137}
   - component: {fileID: 8718356408773675665}
-  - component: {fileID: 8718356408773675570}
   - component: {fileID: 8718356408771679473}
   m_Layer: 0
   m_Name: HorizontalPipe20
@@ -22393,37 +21824,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675569}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621183}
-  previousObject2: {fileID: 49694562374621183}
-  previousObject3: {fileID: 49694562374621183}
-  previousObject4: {fileID: 49694562374621183}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675571
 GameObject:
   m_ObjectHideFlags: 0
@@ -22435,7 +21835,6 @@ GameObject:
   - component: {fileID: 8718356408773580307}
   - component: {fileID: 8718356408770713139}
   - component: {fileID: 8718356408773675664}
-  - component: {fileID: 8718356408773675572}
   - component: {fileID: 8718356408771679475}
   m_Layer: 0
   m_Name: HorizontalPipe21
@@ -22444,37 +21843,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675571}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620947}
-  previousObject2: {fileID: 49694562374620947}
-  previousObject3: {fileID: 49694562374620947}
-  previousObject4: {fileID: 49694562374620947}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675573
 GameObject:
   m_ObjectHideFlags: 0
@@ -22486,7 +21854,6 @@ GameObject:
   - component: {fileID: 8718356408773580309}
   - component: {fileID: 8718356408770713141}
   - component: {fileID: 8718356408773675661}
-  - component: {fileID: 8718356408773675574}
   - component: {fileID: 8718356408771679477}
   m_Layer: 0
   m_Name: HorizontalPipe23
@@ -22495,37 +21862,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675573}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135891}
-  previousObject2: {fileID: 8431212670029135891}
-  previousObject3: {fileID: 8431212670029135891}
-  previousObject4: {fileID: 8431212670029135891}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675575
 GameObject:
   m_ObjectHideFlags: 0
@@ -22537,7 +21873,6 @@ GameObject:
   - component: {fileID: 8718356408773580311}
   - component: {fileID: 8718356408770713143}
   - component: {fileID: 8718356408773675662}
-  - component: {fileID: 8718356408773675576}
   - component: {fileID: 8718356408771679479}
   m_Layer: 0
   m_Name: HorizontalPipe24
@@ -22546,37 +21881,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675575}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620941}
-  previousObject2: {fileID: 49694562374620941}
-  previousObject3: {fileID: 49694562374620941}
-  previousObject4: {fileID: 49694562374620941}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675577
 GameObject:
   m_ObjectHideFlags: 0
@@ -22588,7 +21892,6 @@ GameObject:
   - component: {fileID: 8718356408773580313}
   - component: {fileID: 8718356408770713145}
   - component: {fileID: 8718356408773675657}
-  - component: {fileID: 8718356408773675578}
   - component: {fileID: 8718356408771679481}
   m_Layer: 0
   m_Name: HorizontalPipe17
@@ -22597,37 +21900,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675577}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621177}
-  previousObject2: {fileID: 49694562374621177}
-  previousObject3: {fileID: 49694562374621177}
-  previousObject4: {fileID: 49694562374621177}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675579
 GameObject:
   m_ObjectHideFlags: 0
@@ -22639,7 +21911,6 @@ GameObject:
   - component: {fileID: 8718356408773580315}
   - component: {fileID: 8718356408770713147}
   - component: {fileID: 8718356408773675668}
-  - component: {fileID: 8718356408773675580}
   - component: {fileID: 8718356408771679483}
   m_Layer: 0
   m_Name: HorizontalPipe18
@@ -22648,37 +21919,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675579}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620993}
-  previousObject2: {fileID: 49694562374620993}
-  previousObject3: {fileID: 49694562374620993}
-  previousObject4: {fileID: 49694562374620993}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675581
 GameObject:
   m_ObjectHideFlags: 0
@@ -22690,7 +21930,6 @@ GameObject:
   - component: {fileID: 8718356408773580317}
   - component: {fileID: 8718356408770713149}
   - component: {fileID: 8718356408773675666}
-  - component: {fileID: 8718356408773675582}
   - component: {fileID: 8718356408771679485}
   m_Layer: 0
   m_Name: HorizontalPipe19
@@ -22699,37 +21938,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675581}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621047}
-  previousObject2: {fileID: 49694562374621047}
-  previousObject3: {fileID: 49694562374621047}
-  previousObject4: {fileID: 49694562374621047}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675583
 GameObject:
   m_ObjectHideFlags: 0
@@ -22741,7 +21949,6 @@ GameObject:
   - component: {fileID: 8718356408773580319}
   - component: {fileID: 8718356408770713151}
   - component: {fileID: 8718356408773675680}
-  - component: {fileID: 8718356408773675584}
   - component: {fileID: 8718356408771679487}
   m_Layer: 0
   m_Name: HorizontalPipe2
@@ -22750,37 +21957,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675583}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620949}
-  previousObject2: {fileID: 49694562374620949}
-  previousObject3: {fileID: 49694562374620949}
-  previousObject4: {fileID: 49694562374620949}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675585
 GameObject:
   m_ObjectHideFlags: 0
@@ -22792,7 +21968,6 @@ GameObject:
   - component: {fileID: 8718356408773580321}
   - component: {fileID: 8718356408770713153}
   - component: {fileID: 8718356408773675649}
-  - component: {fileID: 8718356408773675586}
   - component: {fileID: 8718356408771679233}
   m_Layer: 0
   m_Name: HorizontalPipe29
@@ -22801,37 +21976,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675585}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620951}
-  previousObject2: {fileID: 49694562374620951}
-  previousObject3: {fileID: 49694562374620951}
-  previousObject4: {fileID: 49694562374620951}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675587
 GameObject:
   m_ObjectHideFlags: 0
@@ -22843,7 +21987,6 @@ GameObject:
   - component: {fileID: 8718356408773580323}
   - component: {fileID: 8718356408770713155}
   - component: {fileID: 8718356408773675672}
-  - component: {fileID: 8718356408773675588}
   - component: {fileID: 8718356408771679235}
   m_Layer: 0
   m_Name: HorizontalPipe3
@@ -22852,37 +21995,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675587}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621079}
-  previousObject2: {fileID: 49694562374621079}
-  previousObject3: {fileID: 49694562374621079}
-  previousObject4: {fileID: 49694562374621079}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675589
 GameObject:
   m_ObjectHideFlags: 0
@@ -22894,7 +22006,6 @@ GameObject:
   - component: {fileID: 8718356408773580325}
   - component: {fileID: 8718356408770713157}
   - component: {fileID: 8718356408773675650}
-  - component: {fileID: 8718356408773675590}
   - component: {fileID: 8718356408771679237}
   m_Layer: 0
   m_Name: HorizontalPipe30
@@ -22903,37 +22014,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675589}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620939}
-  previousObject2: {fileID: 49694562374620939}
-  previousObject3: {fileID: 49694562374620939}
-  previousObject4: {fileID: 49694562374620939}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675591
 GameObject:
   m_ObjectHideFlags: 0
@@ -22945,7 +22025,6 @@ GameObject:
   - component: {fileID: 8718356408773580327}
   - component: {fileID: 8718356408770713159}
   - component: {fileID: 8718356408773675651}
-  - component: {fileID: 8718356408773675592}
   - component: {fileID: 8718356408771679239}
   m_Layer: 0
   m_Name: HorizontalPipe31
@@ -22954,37 +22033,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675591}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621159}
-  previousObject2: {fileID: 49694562374621159}
-  previousObject3: {fileID: 49694562374621159}
-  previousObject4: {fileID: 49694562374621159}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675593
 GameObject:
   m_ObjectHideFlags: 0
@@ -22996,7 +22044,6 @@ GameObject:
   - component: {fileID: 8718356408773580329}
   - component: {fileID: 8718356408770713161}
   - component: {fileID: 8718356408773675663}
-  - component: {fileID: 8718356408773675594}
   - component: {fileID: 8718356408771679241}
   m_Layer: 0
   m_Name: HorizontalPipe25
@@ -23005,37 +22052,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675593}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620773}
-  previousObject2: {fileID: 49694562374620773}
-  previousObject3: {fileID: 49694562374620773}
-  previousObject4: {fileID: 49694562374620773}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675595
 GameObject:
   m_ObjectHideFlags: 0
@@ -23047,7 +22063,6 @@ GameObject:
   - component: {fileID: 8718356408773580331}
   - component: {fileID: 8718356408770713163}
   - component: {fileID: 8718356408773675654}
-  - component: {fileID: 8718356408773675596}
   - component: {fileID: 8718356408771679243}
   m_Layer: 0
   m_Name: HorizontalPipe26
@@ -23056,37 +22071,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675595}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135873}
-  previousObject2: {fileID: 8431212670029135873}
-  previousObject3: {fileID: 8431212670029135873}
-  previousObject4: {fileID: 8431212670029135873}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675597
 GameObject:
   m_ObjectHideFlags: 0
@@ -23098,7 +22082,6 @@ GameObject:
   - component: {fileID: 8718356408773580333}
   - component: {fileID: 8718356408770713165}
   - component: {fileID: 8718356408773675653}
-  - component: {fileID: 8718356408773675598}
   - component: {fileID: 8718356408771679245}
   m_Layer: 0
   m_Name: HorizontalPipe27
@@ -23107,37 +22090,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675597}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135895}
-  previousObject2: {fileID: 8431212670029135895}
-  previousObject3: {fileID: 8431212670029135895}
-  previousObject4: {fileID: 8431212670029135895}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675599
 GameObject:
   m_ObjectHideFlags: 0
@@ -23149,7 +22101,6 @@ GameObject:
   - component: {fileID: 8718356408773580335}
   - component: {fileID: 8718356408770713167}
   - component: {fileID: 8718356408773675630}
-  - component: {fileID: 8718356408773675600}
   - component: {fileID: 8718356408771679247}
   m_Layer: 0
   m_Name: HorizontalPipe28
@@ -23158,37 +22109,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675599}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620769}
-  previousObject2: {fileID: 49694562374620769}
-  previousObject3: {fileID: 49694562374620769}
-  previousObject4: {fileID: 49694562374620769}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675601
 GameObject:
   m_ObjectHideFlags: 0
@@ -23200,7 +22120,6 @@ GameObject:
   - component: {fileID: 8718356408773580337}
   - component: {fileID: 8718356408770713169}
   - component: {fileID: 8718356408773675674}
-  - component: {fileID: 8718356408773675602}
   - component: {fileID: 8718356408771679249}
   m_Layer: 0
   m_Name: HorizontalPipe5
@@ -23209,37 +22128,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675601}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621157}
-  previousObject2: {fileID: 49694562374621157}
-  previousObject3: {fileID: 49694562374621157}
-  previousObject4: {fileID: 49694562374621157}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675603
 GameObject:
   m_ObjectHideFlags: 0
@@ -23251,7 +22139,6 @@ GameObject:
   - component: {fileID: 8718356408773580339}
   - component: {fileID: 8718356408770713171}
   - component: {fileID: 8718356408773675679}
-  - component: {fileID: 8718356408773675604}
   - component: {fileID: 8718356408771679251}
   m_Layer: 0
   m_Name: HorizontalPipe6
@@ -23260,37 +22147,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675603}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621045}
-  previousObject2: {fileID: 49694562374621045}
-  previousObject3: {fileID: 49694562374621045}
-  previousObject4: {fileID: 49694562374621045}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675605
 GameObject:
   m_ObjectHideFlags: 0
@@ -23302,7 +22158,6 @@ GameObject:
   - component: {fileID: 8718356408773580341}
   - component: {fileID: 8718356408770713173}
   - component: {fileID: 8718356408773675678}
-  - component: {fileID: 8718356408773675606}
   - component: {fileID: 8718356408771679253}
   m_Layer: 0
   m_Name: HorizontalPipe7
@@ -23311,37 +22166,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675605}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621051}
-  previousObject2: {fileID: 49694562374621051}
-  previousObject3: {fileID: 49694562374621051}
-  previousObject4: {fileID: 49694562374621051}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675607
 GameObject:
   m_ObjectHideFlags: 0
@@ -23353,7 +22177,6 @@ GameObject:
   - component: {fileID: 8718356408773580343}
   - component: {fileID: 8718356408770713175}
   - component: {fileID: 8718356408773675677}
-  - component: {fileID: 8718356408773675608}
   - component: {fileID: 8718356408771679255}
   m_Layer: 0
   m_Name: HorizontalPipe8
@@ -23362,37 +22185,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675607}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621079}
-  previousObject2: {fileID: 49694562374621079}
-  previousObject3: {fileID: 49694562374621079}
-  previousObject4: {fileID: 49694562374621079}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675609
 GameObject:
   m_ObjectHideFlags: 0
@@ -23404,7 +22196,6 @@ GameObject:
   - component: {fileID: 8718356408773580345}
   - component: {fileID: 8718356408770713177}
   - component: {fileID: 8718356408773675652}
-  - component: {fileID: 8718356408773675610}
   - component: {fileID: 8718356408771679257}
   m_Layer: 0
   m_Name: HorizontalPipe32
@@ -23413,37 +22204,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675609}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621155}
-  previousObject2: {fileID: 49694562374621155}
-  previousObject3: {fileID: 49694562374621155}
-  previousObject4: {fileID: 49694562374621155}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675611
 GameObject:
   m_ObjectHideFlags: 0
@@ -23455,7 +22215,6 @@ GameObject:
   - component: {fileID: 8718356408773580347}
   - component: {fileID: 8718356408770713179}
   - component: {fileID: 8718356408773675632}
-  - component: {fileID: 8718356408773675612}
   - component: {fileID: 8718356408771679259}
   m_Layer: 0
   m_Name: HorizontalPipe33
@@ -23464,37 +22223,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675611}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621163}
-  previousObject2: {fileID: 49694562374621163}
-  previousObject3: {fileID: 49694562374621163}
-  previousObject4: {fileID: 49694562374621163}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675613
 GameObject:
   m_ObjectHideFlags: 0
@@ -23506,7 +22234,6 @@ GameObject:
   - component: {fileID: 8718356408773580349}
   - component: {fileID: 8718356408770713181}
   - component: {fileID: 8718356408773675631}
-  - component: {fileID: 8718356408773675614}
   - component: {fileID: 8718356408771679261}
   m_Layer: 0
   m_Name: HorizontalPipe34
@@ -23515,37 +22242,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675613}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621043}
-  previousObject2: {fileID: 49694562374621043}
-  previousObject3: {fileID: 49694562374621043}
-  previousObject4: {fileID: 49694562374621043}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675615
 GameObject:
   m_ObjectHideFlags: 0
@@ -23557,7 +22253,6 @@ GameObject:
   - component: {fileID: 8718356408773580351}
   - component: {fileID: 8718356408770713183}
   - component: {fileID: 8718356408773675673}
-  - component: {fileID: 8718356408773675616}
   - component: {fileID: 8718356408771679263}
   m_Layer: 0
   m_Name: HorizontalPipe4
@@ -23566,37 +22261,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675615}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135881}
-  previousObject2: {fileID: 8431212670029135881}
-  previousObject3: {fileID: 8431212670029135881}
-  previousObject4: {fileID: 8431212670029135881}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675617
 GameObject:
   m_ObjectHideFlags: 0
@@ -23608,7 +22272,6 @@ GameObject:
   - component: {fileID: 8718356408773580353}
   - component: {fileID: 8718356408770713197}
   - component: {fileID: 8718356408773675684}
-  - component: {fileID: 8718356408773675618}
   - component: {fileID: 8718356408771679277}
   m_Layer: 0
   m_Name: VerticlePipe1
@@ -23617,37 +22280,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675617}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621035}
-  previousObject2: {fileID: 49694562374621035}
-  previousObject3: {fileID: 49694562374621035}
-  previousObject4: {fileID: 49694562374621035}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675619
 GameObject:
   m_ObjectHideFlags: 0
@@ -23659,7 +22291,6 @@ GameObject:
   - component: {fileID: 8718356408773580355}
   - component: {fileID: 8718356408770713199}
   - component: {fileID: 8718356408773675689}
-  - component: {fileID: 8718356408773675620}
   - component: {fileID: 8718356408771679279}
   m_Layer: 0
   m_Name: VerticlePipe10
@@ -23668,37 +22299,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675619}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621049}
-  previousObject2: {fileID: 49694562374621049}
-  previousObject3: {fileID: 49694562374621049}
-  previousObject4: {fileID: 49694562374621049}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675621
 GameObject:
   m_ObjectHideFlags: 0
@@ -23710,7 +22310,6 @@ GameObject:
   - component: {fileID: 8718356408773580357}
   - component: {fileID: 8718356408770713185}
   - component: {fileID: 8718356408773675655}
-  - component: {fileID: 8718356408773675622}
   - component: {fileID: 8718356408771679265}
   m_Layer: 0
   m_Name: VerticlePipe11
@@ -23719,37 +22318,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675621}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621179}
-  previousObject2: {fileID: 49694562374621179}
-  previousObject3: {fileID: 49694562374621179}
-  previousObject4: {fileID: 49694562374621179}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675623
 GameObject:
   m_ObjectHideFlags: 0
@@ -23761,7 +22329,6 @@ GameObject:
   - component: {fileID: 8718356408773580359}
   - component: {fileID: 8718356408770713187}
   - component: {fileID: 8718356408773675658}
-  - component: {fileID: 8718356408773675624}
   - component: {fileID: 8718356408771679267}
   m_Layer: 0
   m_Name: VerticlePipe12
@@ -23770,37 +22337,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675623}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621027}
-  previousObject2: {fileID: 49694562374621027}
-  previousObject3: {fileID: 49694562374621027}
-  previousObject4: {fileID: 49694562374621027}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675625
 GameObject:
   m_ObjectHideFlags: 0
@@ -23812,7 +22348,6 @@ GameObject:
   - component: {fileID: 8718356408773580361}
   - component: {fileID: 8718356408770713193}
   - component: {fileID: 8718356408773675676}
-  - component: {fileID: 8718356408773675626}
   - component: {fileID: 8718356408771679273}
   m_Layer: 0
   m_Name: HorizontalPipe9
@@ -23821,37 +22356,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675625}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621055}
-  previousObject2: {fileID: 49694562374621055}
-  previousObject3: {fileID: 49694562374621055}
-  previousObject4: {fileID: 49694562374621055}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675627
 GameObject:
   m_ObjectHideFlags: 0
@@ -23863,7 +22367,6 @@ GameObject:
   - component: {fileID: 8718356408773580363}
   - component: {fileID: 8718356408770713195}
   - component: {fileID: 8718356408773675685}
-  - component: {fileID: 8718356408773675628}
   - component: {fileID: 8718356408771679275}
   m_Layer: 0
   m_Name: HorizontalPipe22
@@ -23872,37 +22375,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675627}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620769}
-  previousObject2: {fileID: 49694562374620769}
-  previousObject3: {fileID: 49694562374620769}
-  previousObject4: {fileID: 49694562374620769}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675629
 GameObject:
   m_ObjectHideFlags: 0
@@ -23984,7 +22456,6 @@ GameObject:
   - component: {fileID: 8718356408773580369}
   - component: {fileID: 8718356408770713213}
   - component: {fileID: 8718356408773675656}
-  - component: {fileID: 8718356408773675634}
   - component: {fileID: 8718356408771679293}
   m_Layer: 0
   m_Name: VerticlePipe17
@@ -23993,37 +22464,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675633}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135891}
-  previousObject2: {fileID: 8431212670029135891}
-  previousObject3: {fileID: 8431212670029135891}
-  previousObject4: {fileID: 8431212670029135891}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675635
 GameObject:
   m_ObjectHideFlags: 0
@@ -24035,7 +22475,6 @@ GameObject:
   - component: {fileID: 8718356408773580371}
   - component: {fileID: 8718356408770713215}
   - component: {fileID: 8718356408773675667}
-  - component: {fileID: 8718356408773675636}
   - component: {fileID: 8718356408771679295}
   m_Layer: 0
   m_Name: VerticlePipe18
@@ -24044,37 +22483,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675635}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135873}
-  previousObject2: {fileID: 8431212670029135873}
-  previousObject3: {fileID: 8431212670029135873}
-  previousObject4: {fileID: 8431212670029135873}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675637
 GameObject:
   m_ObjectHideFlags: 0
@@ -24086,7 +22494,6 @@ GameObject:
   - component: {fileID: 8718356408773580373}
   - component: {fileID: 8718356408770713201}
   - component: {fileID: 8718356408773675669}
-  - component: {fileID: 8718356408773675638}
   - component: {fileID: 8718356408771679281}
   m_Layer: 0
   m_Name: VerticlePipe19
@@ -24095,37 +22502,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675637}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621153}
-  previousObject2: {fileID: 49694562374621153}
-  previousObject3: {fileID: 49694562374621153}
-  previousObject4: {fileID: 49694562374621153}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675639
 GameObject:
   m_ObjectHideFlags: 0
@@ -24137,7 +22513,6 @@ GameObject:
   - component: {fileID: 8718356408773580375}
   - component: {fileID: 8718356408770713203}
   - component: {fileID: 8718356408773675681}
-  - component: {fileID: 8718356408773675640}
   - component: {fileID: 8718356408771679283}
   m_Layer: 0
   m_Name: VerticlePipe2
@@ -24146,37 +22521,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675639}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135903}
-  previousObject2: {fileID: 8431212670029135903}
-  previousObject3: {fileID: 8431212670029135903}
-  previousObject4: {fileID: 8431212670029135903}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675641
 GameObject:
   m_ObjectHideFlags: 0
@@ -24188,7 +22532,6 @@ GameObject:
   - component: {fileID: 8718356408773580377}
   - component: {fileID: 8718356408770713189}
   - component: {fileID: 8718356408773675660}
-  - component: {fileID: 8718356408773675642}
   - component: {fileID: 8718356408771679269}
   m_Layer: 0
   m_Name: VerticlePipe13
@@ -24197,37 +22540,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675641}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621025}
-  previousObject2: {fileID: 49694562374621025}
-  previousObject3: {fileID: 49694562374621025}
-  previousObject4: {fileID: 49694562374621025}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675643
 GameObject:
   m_ObjectHideFlags: 0
@@ -24239,7 +22551,6 @@ GameObject:
   - component: {fileID: 8718356408773580379}
   - component: {fileID: 8718356408770713191}
   - component: {fileID: 8718356408773675683}
-  - component: {fileID: 8718356408773675644}
   - component: {fileID: 8718356408771679271}
   m_Layer: 0
   m_Name: VerticlePipe14
@@ -24248,37 +22559,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675643}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621033}
-  previousObject2: {fileID: 49694562374621033}
-  previousObject3: {fileID: 49694562374621033}
-  previousObject4: {fileID: 49694562374621033}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675645
 GameObject:
   m_ObjectHideFlags: 0
@@ -24290,7 +22570,6 @@ GameObject:
   - component: {fileID: 8718356408773580381}
   - component: {fileID: 8718356408770713209}
   - component: {fileID: 8718356408773675670}
-  - component: {fileID: 8718356408773675646}
   - component: {fileID: 8718356408771679289}
   m_Layer: 0
   m_Name: VerticlePipe15
@@ -24299,37 +22578,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675645}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620771}
-  previousObject2: {fileID: 49694562374620771}
-  previousObject3: {fileID: 49694562374620771}
-  previousObject4: {fileID: 49694562374620771}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675647
 GameObject:
   m_ObjectHideFlags: 0
@@ -24341,7 +22589,6 @@ GameObject:
   - component: {fileID: 8718356408773580383}
   - component: {fileID: 8718356408770713211}
   - component: {fileID: 8718356408773675686}
-  - component: {fileID: 8718356408773675648}
   - component: {fileID: 8718356408771679291}
   m_Layer: 0
   m_Name: VerticlePipe16
@@ -24350,37 +22597,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675647}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621053}
-  previousObject2: {fileID: 49694562374621053}
-  previousObject3: {fileID: 49694562374621053}
-  previousObject4: {fileID: 49694562374621053}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!114 &8718356408773675649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25166,7 +23382,6 @@ GameObject:
   - component: {fileID: 8718356408773580385}
   - component: {fileID: 8718356408770713485}
   - component: {fileID: 8718356408773675941}
-  - component: {fileID: 8718356408773675906}
   - component: {fileID: 8718356408771679309}
   m_Layer: 0
   m_Name: VerticlePipe24
@@ -25175,37 +23390,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675905}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621159}
-  previousObject2: {fileID: 49694562374621159}
-  previousObject3: {fileID: 49694562374621159}
-  previousObject4: {fileID: 49694562374621159}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675907
 GameObject:
   m_ObjectHideFlags: 0
@@ -25217,7 +23401,6 @@ GameObject:
   - component: {fileID: 8718356408773580387}
   - component: {fileID: 8718356408770713487}
   - component: {fileID: 8718356408773675942}
-  - component: {fileID: 8718356408773675908}
   - component: {fileID: 8718356408771679311}
   m_Layer: 0
   m_Name: VerticlePipe25
@@ -25226,37 +23409,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675907}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621155}
-  previousObject2: {fileID: 49694562374621155}
-  previousObject3: {fileID: 49694562374621155}
-  previousObject4: {fileID: 49694562374621155}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675909
 GameObject:
   m_ObjectHideFlags: 0
@@ -25268,7 +23420,6 @@ GameObject:
   - component: {fileID: 8718356408773580389}
   - component: {fileID: 8718356408770713473}
   - component: {fileID: 8718356408773675940}
-  - component: {fileID: 8718356408773675910}
   - component: {fileID: 8718356408771679297}
   m_Layer: 0
   m_Name: VerticlePipe26
@@ -25277,37 +23428,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675909}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621007}
-  previousObject2: {fileID: 49694562374621007}
-  previousObject3: {fileID: 49694562374621007}
-  previousObject4: {fileID: 49694562374621007}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675911
 GameObject:
   m_ObjectHideFlags: 0
@@ -25319,7 +23439,6 @@ GameObject:
   - component: {fileID: 8718356408773580391}
   - component: {fileID: 8718356408770713475}
   - component: {fileID: 8718356408773675950}
-  - component: {fileID: 8718356408773675912}
   - component: {fileID: 8718356408771679299}
   m_Layer: 0
   m_Name: VerticlePipe27
@@ -25328,37 +23447,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675911}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621003}
-  previousObject2: {fileID: 49694562374621003}
-  previousObject3: {fileID: 49694562374621003}
-  previousObject4: {fileID: 49694562374621003}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675913
 GameObject:
   m_ObjectHideFlags: 0
@@ -25370,7 +23458,6 @@ GameObject:
   - component: {fileID: 8718356408773580393}
   - component: {fileID: 8718356408770713205}
   - component: {fileID: 8718356408773675944}
-  - component: {fileID: 8718356408773675914}
   - component: {fileID: 8718356408771679285}
   m_Layer: 0
   m_Name: VerticlePipe20
@@ -25379,37 +23466,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675913}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621001}
-  previousObject2: {fileID: 49694562374621001}
-  previousObject3: {fileID: 49694562374621001}
-  previousObject4: {fileID: 49694562374621001}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675915
 GameObject:
   m_ObjectHideFlags: 0
@@ -25421,7 +23477,6 @@ GameObject:
   - component: {fileID: 8718356408773580395}
   - component: {fileID: 8718356408770713207}
   - component: {fileID: 8718356408773675956}
-  - component: {fileID: 8718356408773675916}
   - component: {fileID: 8718356408771679287}
   m_Layer: 0
   m_Name: VerticlePipe21
@@ -25430,37 +23485,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675915}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135895}
-  previousObject2: {fileID: 8431212670029135895}
-  previousObject3: {fileID: 8431212670029135895}
-  previousObject4: {fileID: 8431212670029135895}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675917
 GameObject:
   m_ObjectHideFlags: 0
@@ -25472,7 +23496,6 @@ GameObject:
   - component: {fileID: 8718356408773580397}
   - component: {fileID: 8718356408770713481}
   - component: {fileID: 8718356408773675943}
-  - component: {fileID: 8718356408773675918}
   - component: {fileID: 8718356408771679305}
   m_Layer: 0
   m_Name: VerticlePipe22
@@ -25481,37 +23504,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675917}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621181}
-  previousObject2: {fileID: 49694562374621181}
-  previousObject3: {fileID: 49694562374621181}
-  previousObject4: {fileID: 49694562374621181}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675919
 GameObject:
   m_ObjectHideFlags: 0
@@ -25523,7 +23515,6 @@ GameObject:
   - component: {fileID: 8718356408773580399}
   - component: {fileID: 8718356408770713483}
   - component: {fileID: 8718356408773675937}
-  - component: {fileID: 8718356408773675920}
   - component: {fileID: 8718356408771679307}
   m_Layer: 0
   m_Name: VerticlePipe23
@@ -25532,37 +23523,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675919}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135997}
-  previousObject2: {fileID: 8431212670029135997}
-  previousObject3: {fileID: 8431212670029135997}
-  previousObject4: {fileID: 8431212670029135997}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675921
 GameObject:
   m_ObjectHideFlags: 0
@@ -25574,7 +23534,6 @@ GameObject:
   - component: {fileID: 8718356408773580401}
   - component: {fileID: 8718356408770713501}
   - component: {fileID: 8718356408773675953}
-  - component: {fileID: 8718356408773675922}
   - component: {fileID: 8718356408771679325}
   m_Layer: 0
   m_Name: VerticlePipe4
@@ -25583,37 +23542,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675921}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621029}
-  previousObject2: {fileID: 49694562374621029}
-  previousObject3: {fileID: 49694562374621029}
-  previousObject4: {fileID: 49694562374621029}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675923
 GameObject:
   m_ObjectHideFlags: 0
@@ -25625,7 +23553,6 @@ GameObject:
   - component: {fileID: 8718356408773580403}
   - component: {fileID: 8718356408770713503}
   - component: {fileID: 8718356408773675954}
-  - component: {fileID: 8718356408773675924}
   - component: {fileID: 8718356408771679327}
   m_Layer: 0
   m_Name: VerticlePipe5
@@ -25634,37 +23561,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675923}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621039}
-  previousObject2: {fileID: 49694562374621039}
-  previousObject3: {fileID: 49694562374621039}
-  previousObject4: {fileID: 49694562374621039}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675925
 GameObject:
   m_ObjectHideFlags: 0
@@ -25676,7 +23572,6 @@ GameObject:
   - component: {fileID: 8718356408773580405}
   - component: {fileID: 8718356408770713489}
   - component: {fileID: 8718356408773675957}
-  - component: {fileID: 8718356408773675926}
   - component: {fileID: 8718356408771679313}
   m_Layer: 0
   m_Name: VerticlePipe6
@@ -25685,37 +23580,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675925}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621165}
-  previousObject2: {fileID: 49694562374621165}
-  previousObject3: {fileID: 49694562374621165}
-  previousObject4: {fileID: 49694562374621165}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675927
 GameObject:
   m_ObjectHideFlags: 0
@@ -25727,7 +23591,6 @@ GameObject:
   - component: {fileID: 8718356408773580407}
   - component: {fileID: 8718356408770713491}
   - component: {fileID: 8718356408773675955}
-  - component: {fileID: 8718356408773675928}
   - component: {fileID: 8718356408771679315}
   m_Layer: 0
   m_Name: VerticlePipe7
@@ -25736,37 +23599,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675927}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621183}
-  previousObject2: {fileID: 49694562374621183}
-  previousObject3: {fileID: 49694562374621183}
-  previousObject4: {fileID: 49694562374621183}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675929
 GameObject:
   m_ObjectHideFlags: 0
@@ -25778,7 +23610,6 @@ GameObject:
   - component: {fileID: 8718356408773580409}
   - component: {fileID: 8718356408770713477}
   - component: {fileID: 8718356408773675939}
-  - component: {fileID: 8718356408773675930}
   - component: {fileID: 8718356408771679301}
   m_Layer: 0
   m_Name: VerticlePipe28
@@ -25787,37 +23618,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675929}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621163}
-  previousObject2: {fileID: 49694562374621163}
-  previousObject3: {fileID: 49694562374621163}
-  previousObject4: {fileID: 49694562374621163}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675931
 GameObject:
   m_ObjectHideFlags: 0
@@ -25829,7 +23629,6 @@ GameObject:
   - component: {fileID: 8718356408773580411}
   - component: {fileID: 8718356408770713479}
   - component: {fileID: 8718356408773675959}
-  - component: {fileID: 8718356408773675932}
   - component: {fileID: 8718356408771679303}
   m_Layer: 0
   m_Name: VerticlePipe29
@@ -25838,37 +23637,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675931}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621181}
-  previousObject2: {fileID: 49694562374621181}
-  previousObject3: {fileID: 49694562374621181}
-  previousObject4: {fileID: 49694562374621181}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675933
 GameObject:
   m_ObjectHideFlags: 0
@@ -25880,7 +23648,6 @@ GameObject:
   - component: {fileID: 8718356408773580413}
   - component: {fileID: 8718356408770713497}
   - component: {fileID: 8718356408773675958}
-  - component: {fileID: 8718356408773675934}
   - component: {fileID: 8718356408771679321}
   m_Layer: 0
   m_Name: VerticlePipe3
@@ -25889,37 +23656,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675933}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 8431212670029135899}
-  previousObject2: {fileID: 8431212670029135899}
-  previousObject3: {fileID: 8431212670029135899}
-  previousObject4: {fileID: 8431212670029135899}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675935
 GameObject:
   m_ObjectHideFlags: 0
@@ -25931,7 +23667,6 @@ GameObject:
   - component: {fileID: 8718356408773580415}
   - component: {fileID: 8718356408770713499}
   - component: {fileID: 8718356408773675938}
-  - component: {fileID: 8718356408773675936}
   - component: {fileID: 8718356408771679323}
   m_Layer: 0
   m_Name: VerticlePipe30
@@ -25940,37 +23675,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675935}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: 0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374620769}
-  previousObject2: {fileID: 49694562374620769}
-  previousObject3: {fileID: 49694562374620769}
-  previousObject4: {fileID: 49694562374620769}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!114 &8718356408773675937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26126,7 +23830,6 @@ GameObject:
   - component: {fileID: 8718356408773580681}
   - component: {fileID: 8718356408770713493}
   - component: {fileID: 8718356408773675952}
-  - component: {fileID: 8718356408773675946}
   - component: {fileID: 8718356408771679317}
   m_Layer: 0
   m_Name: VerticlePipe8
@@ -26135,37 +23838,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675945}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621031}
-  previousObject2: {fileID: 49694562374621031}
-  previousObject3: {fileID: 49694562374621031}
-  previousObject4: {fileID: 49694562374621031}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675947
 GameObject:
   m_ObjectHideFlags: 0
@@ -26177,7 +23849,6 @@ GameObject:
   - component: {fileID: 8718356408773580683}
   - component: {fileID: 8718356408770713495}
   - component: {fileID: 8718356408773675951}
-  - component: {fileID: 8718356408773675948}
   - component: {fileID: 8718356408771679319}
   m_Layer: 0
   m_Name: VerticlePipe9
@@ -26186,37 +23857,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8718356408773675948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8718356408773675947}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f241226134884f47b4af29aba02f998, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elapsedTime: 0
-  speed: 0.5
-  fillStartPosition: 0
-  fillEndPosition: -0.5
-  isNowOrrange: 0
-  isStartBattery: 0
-  previousObject1: {fileID: 49694562374621161}
-  previousObject2: {fileID: 49694562374621161}
-  previousObject3: {fileID: 49694562374621161}
-  previousObject4: {fileID: 49694562374621161}
-  triggerAngle1: 0
-  triggerAngle2: 0
-  triggerAngle3: 0
-  triggerAngle4: 0
-  badAngle1: 10
-  badAngle2: 10
-  badAngle3: 10
-  badAngle4: 10
-  isBattery: 0
 --- !u!1 &8718356408773675949
 GameObject:
   m_ObjectHideFlags: 0

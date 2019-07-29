@@ -36,11 +36,12 @@ public class PipeColourChange : MonoBehaviour
 
             StartCoroutine(Fill());
         }
+        /*
         if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == false)
         {
             StartCoroutine(Empty());
         }
-
+        */
     }
 
 
@@ -67,7 +68,7 @@ public class PipeColourChange : MonoBehaviour
             }
         }
     }
-
+    /*
     IEnumerator Empty()
     {
         while (isPipeNowOrange)
@@ -93,4 +94,5 @@ public class PipeColourChange : MonoBehaviour
             yield return !isPipeNowOrange;
         }
     }
+    */
 }

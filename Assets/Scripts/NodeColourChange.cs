@@ -19,19 +19,18 @@ public class NodeColourChange : MonoBehaviour
     public GameObject previousObject3;
     public GameObject previousObject4;
 
-    public float triggerAngle1;
-    public float triggerAngle2;
-    public float triggerAngle3;
-    public float triggerAngle4;
+    public float triggerAngle;
 
-    public float badAngle1 = 10;
-    public float badAngle2 = 10;
-    public float badAngle3 = 10;
-    public float badAngle4 = 10;
+    /*
+    float badAngle1 = 10;
+    float badAngle2 = 10;
+    float badAngle3 = 10;
+    float badAngle4 = 10;
+    */
 
     Renderer rend;
 
-    private bool hasFired = false;
+    public bool hasFired = false;
     public bool isBattery = false;
 
     void Start()
@@ -49,11 +48,7 @@ public class NodeColourChange : MonoBehaviour
     {
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
-        if (isStartBattery == false
-            && (triggerAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (triggerAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (triggerAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (triggerAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
+        if (isStartBattery == false && triggerAngle + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle - 2 <= this.gameObject.transform.eulerAngles.z)
         {
             if (previousObject1.GetComponent<PipeColourChange>().isPipeNowOrange == true
                 && previousObject2.GetComponent<PipeColourChange>().isPipeNowOrange == true
@@ -71,6 +66,7 @@ public class NodeColourChange : MonoBehaviour
 
         }
 
+        /*
         if (isStartBattery == false
             && (badAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
             || (badAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
@@ -79,6 +75,7 @@ public class NodeColourChange : MonoBehaviour
         {
             StartCoroutine(Empty());
         }
+        */
 
     }
   
@@ -107,6 +104,7 @@ public class NodeColourChange : MonoBehaviour
         }
     }
 
+    /*
     IEnumerator Empty()
     {
         while (isNowOrrange)
@@ -132,6 +130,7 @@ public class NodeColourChange : MonoBehaviour
             yield return !isNowOrrange;
         }
     }
+    */
 
    public void AudioProgression()
     {
