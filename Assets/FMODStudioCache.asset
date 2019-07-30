@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114021121716630196}
-  - {fileID: 114414522975918180}
+  - {fileID: 114288995934402862}
   EditorEvents:
   - {fileID: 114597379108928362}
-  - {fileID: 114783653325305420}
+  - {fileID: 114806480977375146}
   MasterBanks:
-  - {fileID: 114414522975918180}
+  - {fileID: 114288995934402862}
   StringsBanks:
   - {fileID: 114021121716630196}
-  stringsBankWriteTime: 636998601960871308
+  stringsBankWriteTime: 637000830882688538
   cacheVersion: 3
 --- !u!114 &114021121716630196
 MonoBehaviour:
@@ -37,11 +37,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\ChargeAudio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636998601960871308
+  lastModified: 637000830882688538
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 778
+    Value: 780
   Exists: 1
 --- !u!114 &114098720663480590
 MonoBehaviour:
@@ -91,6 +91,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114115631643816152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114142835551669700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +122,22 @@ MonoBehaviour:
   Name: NodeUnlock
   Min: 0
   Max: 100
+  Default: 0
+--- !u!114 &114177806556426798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
   Default: 0
 --- !u!114 &114204081232587348
 MonoBehaviour:
@@ -195,6 +227,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114283334181966776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114288251795733654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +259,25 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114288995934402862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: E:\Repos\Charge\Assets\ChargeAudio\Build\Desktop\Master Bank.bank
+  lastModified: 637000830882648625
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2124352
+  Exists: 1
 --- !u!114 &114293831928694910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +397,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114335954991554734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114346598359186550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +446,22 @@ MonoBehaviour:
   Max: 1
   Default: 0
 --- !u!114 &114361063517086926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114406913324815346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -484,6 +583,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114527492294025578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114538087535371218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,6 +614,22 @@ MonoBehaviour:
   Name: Rotate
   Min: 0
   Max: 1
+  Default: 0
+--- !u!114 &114540839386049752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
+  Min: 0
+  Max: 100
   Default: 0
 --- !u!114 &114583926793720960
 MonoBehaviour:
@@ -551,6 +682,22 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114595305115732518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114597379108928362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,12 +713,12 @@ MonoBehaviour:
   Path: event:/SFX/NodeRotate
   guid: 11c25ebb7856a448a6edd3788b07bedf
   Banks:
-  - {fileID: 114414522975918180}
+  - {fileID: 114288995934402862}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114982881743268154}
+  - {fileID: 114335954991554734}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -663,6 +810,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114668505493815452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114686973577267230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,6 +902,22 @@ MonoBehaviour:
   - Name: Desktop
     Value: 25945312
   Exists: 1
+--- !u!114 &114736582721568622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114753609107454612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,6 +958,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 275478
+--- !u!114 &114806480977375146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Score2
+  guid: 6f2d8e087968164e8eea3f0e36443f88
+  Banks:
+  - {fileID: 114288995934402862}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114668505493815452}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 165176
 --- !u!114 &114834296104859146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -792,6 +995,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114849898303547974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
   Min: 0
   Max: 100
   Default: 0
@@ -876,6 +1095,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: NodeUnlock
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114955241260576214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
   Min: 0
   Max: 100
   Default: 0

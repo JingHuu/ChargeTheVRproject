@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
 
 
     public static FMOD.Studio.ParameterInstance StemUnlock;
+    public static FMOD.Studio.ParameterInstance musicProgression;
     public static FMOD.Studio.ParameterInstance Rotate;
 
     // Keep music rolling between scenes. Will not destroy onload unless there is a double.
@@ -37,12 +38,13 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         // music
-        music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score");
-        // sfx
+        //music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score");
+        music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score2");
 
 
         // connect to sound parameters
-        music.getParameter("NodeUnlock", out StemUnlock);
+        //music.getParameter("NodeUnlock", out StemUnlock);
+        music.getParameter("MusicProgression", out musicProgression);
         NodeRotation.getParameter("Rotate", out Rotate);
 
         music.start();
@@ -50,7 +52,9 @@ public class AudioManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        StemUnlock.setValue(audioProgression);
+        //StemUnlock.setValue(audioProgression);
+        musicProgression.setValue(audioProgression);
+        
         Rotate.setValue(rotate);
     }
 
