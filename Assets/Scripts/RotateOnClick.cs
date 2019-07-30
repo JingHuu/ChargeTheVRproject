@@ -18,11 +18,8 @@ public class RotateOnClick : MonoBehaviour
         if(!nodeChange.hasFired)
         {
             transform.Rotate(0, 0, 45);
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);
         }
-        
-
-        AudioManager.rotate = .2f;    // this line is not doing what it should
-        FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);
     }
     
     private void WhenTriggerPulled()

@@ -25,7 +25,7 @@ public class PipeColourChange : MonoBehaviour
     {
         if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == true)
         {
-            if (AudioManager.audioProgression >= 30f)
+            if (AudioManager.audioProgression > 20f)
             {
                 speed = .5f;
             }

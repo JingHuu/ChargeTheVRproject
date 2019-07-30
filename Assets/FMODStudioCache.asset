@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114021121716630196}
-  - {fileID: 114288995934402862}
+  - {fileID: 114879569255562168}
   EditorEvents:
   - {fileID: 114597379108928362}
   - {fileID: 114806480977375146}
   MasterBanks:
-  - {fileID: 114288995934402862}
+  - {fileID: 114879569255562168}
   StringsBanks:
   - {fileID: 114021121716630196}
-  stringsBankWriteTime: 637000830882688538
+  stringsBankWriteTime: 637000963380060503
   cacheVersion: 3
 --- !u!114 &114021121716630196
 MonoBehaviour:
@@ -37,7 +37,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\ChargeAudio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 637000830882688538
+  lastModified: 637000963380060503
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -631,6 +631,22 @@ MonoBehaviour:
   Min: 0
   Max: 100
   Default: 0
+--- !u!114 &114560529374705352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Rotate
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114583926793720960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,12 +729,12 @@ MonoBehaviour:
   Path: event:/SFX/NodeRotate
   guid: 11c25ebb7856a448a6edd3788b07bedf
   Banks:
-  - {fileID: 114288995934402862}
+  - {fileID: 114879569255562168}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 114335954991554734}
+  - {fileID: 114560529374705352}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -973,12 +989,12 @@ MonoBehaviour:
   Path: event:/Music/Score2
   guid: 6f2d8e087968164e8eea3f0e36443f88
   Banks:
-  - {fileID: 114288995934402862}
+  - {fileID: 114879569255562168}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114668505493815452}
+  - {fileID: 114873705768505274}
   MinDistance: 0
   MaxDistance: 0
   Length: 165176
@@ -1062,6 +1078,42 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114873705768505274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: MusicProgression
+  Min: 0
+  Max: 100
+  Default: 0
+--- !u!114 &114879569255562168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: E:\Repos\Unity2\ChargeTheVRproject\Assets\ChargeAudio\Build\Desktop\Master
+    Bank.bank
+  lastModified: 637000963380220084
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2124512
+  Exists: 1
 --- !u!114 &114880303452756800
 MonoBehaviour:
   m_ObjectHideFlags: 0
