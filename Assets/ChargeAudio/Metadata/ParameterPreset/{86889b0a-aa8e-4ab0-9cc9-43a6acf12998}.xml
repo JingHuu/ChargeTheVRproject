@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{86889b0a-aa8e-4ab0-9cc9-43a6acf12998}">
+        <property name="name">
+            <value>MusicProgression</value>
+        </property>
+        <relationship name="folder">
+            <destination>{6dec513b-a6fa-43fd-b3bf-c1a067a91043}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{beef7144-2cb9-4239-a949-0df7e520fa25}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{beef7144-2cb9-4239-a949-0df7e520fa25}">
+        <property name="maximum">
+            <value>100</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

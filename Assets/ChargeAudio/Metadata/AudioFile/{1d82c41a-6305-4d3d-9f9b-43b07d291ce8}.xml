@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{1d82c41a-6305-4d3d-9f9b-43b07d291ce8}">
+        <property name="assetPath">
+            <value>Score2Loops/CVRBGM_G_Build_From_5_to_6.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.8235416666666668</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bcdc9436-46fd-4ab4-9daa-82b1284b307f}</destination>
+        </relationship>
+    </object>
+</objects>
