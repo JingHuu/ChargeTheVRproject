@@ -49,12 +49,17 @@ public class NodeColourChange : MonoBehaviour
         {          
             StartCoroutine(Fill());
         }
+
+        myT = transform;
     }
+
+    private Transform myT;
+    
     void Update()
     {
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
-        if (isStartBattery == false && triggerAngle + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle - 2 <= this.gameObject.transform.eulerAngles.z)
+        if (isStartBattery == false && triggerAngle + 2 >= myT.eulerAngles.z && triggerAngle - 2 <= myT.eulerAngles.z)
         {
             if (_pipe1.isPipeNowOrange || _pipe2.isPipeNowOrange || _pipe3.isPipeNowOrange || _pipe4.isPipeNowOrange)
             {
