@@ -19,6 +19,11 @@ public class NodeColourChange : MonoBehaviour
     public GameObject previousObject3;
     public GameObject previousObject4;
 
+    private PipeColourChange _pipe1;
+    private PipeColourChange _pipe2;
+    private PipeColourChange _pipe3;
+    private PipeColourChange _pipe4;
+
     public float triggerAngle;
 
     /*
@@ -38,10 +43,11 @@ public class NodeColourChange : MonoBehaviour
         rend = GetComponent<Renderer>();
         AudioManager.audioProgression = 0f;
 
+        StartCoroutine(Setup());
+        
         if (isStartBattery == true)
-        {
+        {          
             StartCoroutine(Fill());
-
         }
     }
     void Update()
@@ -50,10 +56,7 @@ public class NodeColourChange : MonoBehaviour
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
         if (isStartBattery == false && triggerAngle + 2 >= this.gameObject.transform.eulerAngles.z && triggerAngle - 2 <= this.gameObject.transform.eulerAngles.z)
         {
-            if (previousObject1.GetComponent<PipeColourChange>().isPipeNowOrange == true
-                && previousObject2.GetComponent<PipeColourChange>().isPipeNowOrange == true
-                && previousObject3.GetComponent<PipeColourChange>().isPipeNowOrange == true
-                && previousObject4.GetComponent<PipeColourChange>().isPipeNowOrange == true)
+            if (_pipe1.isPipeNowOrange || _pipe2.isPipeNowOrange || _pipe3.isPipeNowOrange || _pipe4.isPipeNowOrange)
             {
                 if (!hasFired)
                 {
@@ -78,7 +81,17 @@ public class NodeColourChange : MonoBehaviour
         */
 
     }
-  
+
+    IEnumerator Setup()
+    {
+        _pipe1 = previousObject1.GetComponent<PipeColourChange>();
+        _pipe2 = previousObject2.GetComponent<PipeColourChange>();
+        _pipe3 = previousObject3.GetComponent<PipeColourChange>();
+        _pipe4 = previousObject4.GetComponent<PipeColourChange>();
+        
+        yield return null;
+    }
+    
 
     IEnumerator Fill()
     {

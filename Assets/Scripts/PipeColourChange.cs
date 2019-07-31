@@ -13,6 +13,9 @@ public class PipeColourChange : MonoBehaviour
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
     public GameObject previousObject1;
+    public GameObject previousObject2;
+    private NodeColourChange _node1;
+    private NodeColourChange _node2;
 
     Renderer rend;
 
@@ -20,10 +23,29 @@ public class PipeColourChange : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         speed = .05f;
+        StartCoroutine(Setup());
+        
     }
+    bool b = false;
     void Update()
     {
-        if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == true)
+        
+        if (previousObject2 != null)
+        {
+            if (_node1.isNowOrrange || _node2.isNowOrrange)
+            {
+                b = true;
+            }
+        }
+        else
+        {
+            if (_node1.isNowOrrange)
+            {
+                b = true;
+            }
+        }
+        
+        if (b)
         {
             if (AudioManager.audioProgression > 20f)
             {
@@ -44,6 +66,14 @@ public class PipeColourChange : MonoBehaviour
         */
     }
 
+    IEnumerator Setup()
+    {
+        _node1 = previousObject1.GetComponent<NodeColourChange>();
+        
+        if (previousObject2 != null) _node2 = previousObject2.GetComponent<NodeColourChange>();
+        
+        yield return null;
+    }
 
     IEnumerator Fill()
     {
