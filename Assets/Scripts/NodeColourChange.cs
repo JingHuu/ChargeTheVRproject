@@ -69,17 +69,6 @@ public class NodeColourChange : MonoBehaviour
 
         }
 
-        /*
-        if (isStartBattery == false
-            && (badAngle1 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle1 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (badAngle2 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle2 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (badAngle3 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle3 - 2 <= this.gameObject.transform.eulerAngles.z)
-            || (badAngle4 + 2 >= this.gameObject.transform.eulerAngles.z && badAngle4 - 2 <= this.gameObject.transform.eulerAngles.z))
-        {
-            StartCoroutine(Empty());
-        }
-        */
-
     }
 
     IEnumerator Setup()
@@ -108,15 +97,22 @@ public class NodeColourChange : MonoBehaviour
                     isNowOrrange = true;
                     elapsedTime = 0f;
                 }
-                else
-                {
 
-                }
                 yield return isNowOrrange;
             }
         }
     }
 
+    public bool Check()
+    {
+        if (_pipe1.isPipeNowOrange && _pipe2.isPipeNowOrange && _pipe3.isPipeNowOrange && _pipe4.isPipeNowOrange)
+        {
+            return false;
+        }
+        
+        return true;
+    }
+    
     /*
     IEnumerator Empty()
     {
@@ -145,10 +141,8 @@ public class NodeColourChange : MonoBehaviour
     }
     */
 
-   public void AudioProgression()
+    private void AudioProgression()
     {
         if(isBattery) AudioManager.audioProgression += 10f; // this will activate one stem in the audio everytime a battery turns on
-        
-        Debug.Log(AudioManager.audioProgression);
     }
 }
