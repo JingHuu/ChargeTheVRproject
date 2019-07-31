@@ -60,9 +60,9 @@ PlayerSettings:
   allowedAutorotateToLandscapeRight: 1
   allowedAutorotateToLandscapeLeft: 1
   useOSAutorotation: 1
-  use32BitDisplayBuffer: 1
+  use32BitDisplayBuffer: 0
   preserveFramebufferAlpha: 0
-  disableDepthAndStencilBuffers: 0
+  disableDepthAndStencilBuffers: 1
   androidStartInFullscreen: 1
   androidRenderOutsideSafeArea: 0
   androidBlitType: 0
@@ -75,7 +75,7 @@ PlayerSettings:
   Force IOS Speakers When Recording: 0
   deferSystemGesturesMode: 0
   hideHomeButton: 0
-  submitAnalytics: 1
+  submitAnalytics: 0
   usePlayerLog: 1
   bakeCollisionMeshes: 0
   forceSingleInstance: 0
