@@ -14,6 +14,7 @@ public class NodeColourChange : MonoBehaviour
 
     //PLEASE do not rename the following. Otherwise they will ALL need to be linked up AGAIN in Inspector.
     public GameObject previousObject1;
+
     //Needed for nodes with mulitple inputs.
     public GameObject previousObject2;
     public GameObject previousObject3;
@@ -44,9 +45,9 @@ public class NodeColourChange : MonoBehaviour
         AudioManager.audioProgression = 0f;
 
         StartCoroutine(Setup());
-        
+
         if (isStartBattery == true)
-        {          
+        {
             StartCoroutine(Fill());
         }
 
@@ -54,7 +55,7 @@ public class NodeColourChange : MonoBehaviour
     }
 
     private Transform myT;
-    
+
     void Update()
     {
 
@@ -69,15 +70,17 @@ public class NodeColourChange : MonoBehaviour
                     StartCoroutine(Fill());
                     AudioProgression();
                 }
-                
+
             }
 
         }
 
     }
-
-    IEnumerator Setup()
+    
+IEnumerator Setup()
     {
+        
+        
         _pipe1 = previousObject1.GetComponent<PipeColourChange>();
         _pipe2 = previousObject2.GetComponent<PipeColourChange>();
         _pipe3 = previousObject3.GetComponent<PipeColourChange>();
@@ -110,12 +113,11 @@ public class NodeColourChange : MonoBehaviour
 
     public bool Check()
     {
-        if (_pipe1.isPipeNowOrange && _pipe2.isPipeNowOrange && _pipe3.isPipeNowOrange && _pipe4.isPipeNowOrange)
-        {
-            return false;
-        }
+        bool yes = !(_pipe1.isPipeNowOrange && _pipe2.isPipeNowOrange && _pipe3.isPipeNowOrange && _pipe4.isPipeNowOrange);
         
-        return true;
+        Debug.Log(yes);
+
+        return yes;
     }
     
     /*
