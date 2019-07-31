@@ -182,6 +182,8 @@ public class OVRScreenFade : MonoBehaviour
             SetMaterialAlpha();
 			yield return new WaitForEndOfFrame();
 		}
+
+		GetComponent<MeshRenderer>().enabled = false;
 	}
 
     /// <summary>
