@@ -825,7 +825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100060, guid: 06cd4a89f4530b94f9f10e3a91236a1e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: 06cd4a89f4530b94f9f10e3a91236a1e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2676,7 +2676,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2957,7 +2957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0d887a23a7791974ca821c89dc2a0373, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0d887a23a7791974ca821c89dc2a0373, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4422,7 +4422,7 @@ PrefabInstance:
     - target: {fileID: 5139665674423410752, guid: 509c47f0122b1a049b6dff73693b14d7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5139665674423410758, guid: 509c47f0122b1a049b6dff73693b14d7,
         type: 3}
@@ -5130,7 +5130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1486659439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5423,7 +5423,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 4fc039a7685571f4e98f0b95857cae95, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: eaaf264cecc0b3b4681b36ddde414b03, type: 2}
+      objectReference: {fileID: 2100000, guid: fbb4784d97b25ad419233eb231936639, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fc039a7685571f4e98f0b95857cae95, type: 3}
 --- !u!198 &1653812475 stripped
@@ -5450,7 +5450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21e4e35f07282c7469722e9ad67d3a49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpTime: 10
+  lerpTime: 50
 --- !u!198 &1724640344 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 140440739478330855, guid: e53c9c692ac700c49b06990f4fac5b69,
