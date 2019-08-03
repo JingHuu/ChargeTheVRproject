@@ -79,8 +79,6 @@ public class NodeColourChange : MonoBehaviour
     
 IEnumerator Setup()
     {
-        
-        
         _pipe1 = previousObject1.GetComponent<PipeColourChange>();
         _pipe2 = previousObject2.GetComponent<PipeColourChange>();
         _pipe3 = previousObject3.GetComponent<PipeColourChange>();
@@ -92,22 +90,18 @@ IEnumerator Setup()
 
     IEnumerator Fill()
     {
-        while (!isNowOrrange)
+        elapsedTime = 0f;
+        isNowOrrange = true;
+        
+        while (elapsedTime < 1f)
         {
             //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
             //Vector1_776A8DBC
             rend.material.SetFloat("_Lerp", Mathf.Lerp(0, 1, elapsedTime));
             elapsedTime += speed * Time.deltaTime;
 
-            {
-                if (elapsedTime >= 1f)
-                {
-                    isNowOrrange = true;
-                    elapsedTime = 0f;
-                }
-
-                yield return isNowOrrange;
-            }
+            yield return null;
+            
         }
     }
 
@@ -119,34 +113,6 @@ IEnumerator Setup()
 
         return yes;
     }
-    
-    /*
-    IEnumerator Empty()
-    {
-        while (isNowOrrange)
-        {
-            //Start at fill end, move to fill start
-
-            //rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(0f, -fillEndPosition, elapsedTime), 0));
-            rend.material.SetFloat("_Lerp", Mathf.Lerp(1, 0, elapsedTime));
-            elapsedTime += speed * Time.deltaTime;
-
-            {
-                if (elapsedTime >= 1f)
-                {
-                    isNowOrrange = false;
-                    elapsedTime = 0f;
-                }
-                else
-                {
-
-                }
-                
-            }
-            yield return !isNowOrrange;
-        }
-    }
-    */
 
     private void AudioProgression()
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PipeColourChange : MonoBehaviour
 {
     public float elapsedTime = .0f;
-    public float speed;
+    private float speed;
     public float fillStartPosition = 0f;
     public float fillEndPosition = .5f;
 
@@ -22,48 +22,35 @@ public class PipeColourChange : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        speed = .05f;
+        speed = .7f;
         StartCoroutine(Setup());
-        
+        triggered = false;
     }
-    bool b = false;
+
+    private bool triggered = false;
+
     void Update()
     {
-        
+
         if (previousObject2 != null)
         {
+        
             if (_node1.isNowOrrange || _node2.isNowOrrange)
             {
-                b = true;
+//                if (AudioManager.audioProgression > 20f)
+//                {
+//                    speed = .5f;
+//                }
+//                else
+//                {
+//                    speed = .05f;
+//                }
+                
+                if (!triggered) StartCoroutine(Fill());
             }
+            
         }
-        else
-        {
-            if (_node1.isNowOrrange)
-            {
-                b = true;
-            }
-        }
-        
-        if (b)
-        {
-            if (AudioManager.audioProgression > 20f)
-            {
-                speed = .5f;
-            }
-            else
-            {
-                speed = .05f;
-            }
 
-            StartCoroutine(Fill());
-        }
-        /*
-        if (previousObject1.GetComponent<NodeColourChange>().isNowOrrange == false)
-        {
-            StartCoroutine(Empty());
-        }
-        */
     }
 
     IEnumerator Setup()
@@ -77,25 +64,19 @@ public class PipeColourChange : MonoBehaviour
 
     IEnumerator Fill()
     {
-        while (!isPipeNowOrange)
+        elapsedTime = 0f;
+        triggered = true;
+        isPipeNowOrange = true;
+        
+        while (elapsedTime < 1f)
         {
             rend.material.SetTextureOffset("_MainTex", new Vector2(Mathf.Lerp(fillStartPosition, fillEndPosition, elapsedTime), 0));
             //Vector1_776A8DBC
             //rend.material.SetFloat("_Lerp", Mathf.Lerp(0, 1, elapsedTime));
             elapsedTime += speed * Time.deltaTime;
 
-            {
-                if (elapsedTime >= 1f)
-                {
-                    isPipeNowOrange = true;
-                    elapsedTime = 0f;
-                }
-                else
-                {
-
-                }
-                yield return isPipeNowOrange;
-            }
+            yield return isPipeNowOrange;
+            
         }
     }
     /*
