@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NodeColourChange : MonoBehaviour
+public class FinalNodeColourChange : MonoBehaviour
 {
     public float elapsedTime = .0f;
     public float speed = .5f;
@@ -62,13 +62,15 @@ public class NodeColourChange : MonoBehaviour
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
         if (!isStartBattery && triggerAngle + 2 >= myT.eulerAngles.z && triggerAngle - 2 <= myT.eulerAngles.z)
         {
-            if (_pipe1.isPipeNowOrange || _pipe2.isPipeNowOrange || _pipe3.isPipeNowOrange || _pipe4.isPipeNowOrange)
+            if (_pipe1.isPipeNowOrange && _pipe2.isPipeNowOrange && _pipe3.isPipeNowOrange && _pipe4.isPipeNowOrange)
             {
                 if (!hasFired)
                 {
                     hasFired = true;
                     StartCoroutine(Fill());
                     AudioProgression();
+                    
+                    //PUT IN GAME END HERE
                 }
 
             }
