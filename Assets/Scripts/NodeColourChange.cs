@@ -20,10 +20,10 @@ public class NodeColourChange : MonoBehaviour
     public GameObject previousObject3;
     public GameObject previousObject4;
 
-     PipeColourChange _pipe1;
-     PipeColourChange _pipe2;
-     PipeColourChange _pipe3;
-     PipeColourChange _pipe4;
+    [HideInInspector] public PipeColourChange _pipe1;
+    [HideInInspector] public PipeColourChange _pipe2;
+    [HideInInspector] public PipeColourChange _pipe3;
+    [HideInInspector] public PipeColourChange _pipe4;
 
     public float triggerAngle;
 
@@ -54,9 +54,9 @@ public class NodeColourChange : MonoBehaviour
         myT = transform;
     }
 
-    private Transform myT;
+    [HideInInspector] public Transform myT;
 
-    void Update()
+    public virtual void Update()
     {
 
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
@@ -88,7 +88,7 @@ IEnumerator Setup()
     }
     
 
-    IEnumerator Fill()
+    public IEnumerator Fill()
     {
         elapsedTime = 0f;
         isNowOrrange = true;
@@ -116,7 +116,7 @@ IEnumerator Setup()
         return yes;
     }
 
-    private void AudioProgression()
+    public void AudioProgression()
     {
         if(isBattery) AudioManager.audioProgression += 10f; // this will activate one stem in the audio everytime a battery turns on
     }
