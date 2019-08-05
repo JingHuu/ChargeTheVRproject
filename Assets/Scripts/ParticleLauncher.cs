@@ -10,6 +10,8 @@ public class ParticleLauncher : MonoBehaviour
     private bool nodeParticleFired = false;
     public bool isEnding = false;
 
+    private bool alreadyEnded;
+    
     private void Start()
     {
         nodeChange = GetComponentInChildren<NodeColourChange>();
@@ -22,7 +24,7 @@ public class ParticleLauncher : MonoBehaviour
         {
             if (isEnding)
             {
-                StartCoroutine(Ending());
+                if (!alreadyEnded) StartCoroutine(Ending());
             }
             else if (!nodeParticleFired)
             {
@@ -43,6 +45,7 @@ public class ParticleLauncher : MonoBehaviour
 
     public IEnumerator Ending()
     {
+        alreadyEnded = true;
         foreach (ParticleSystem part in endParticles)
         {
             part.Play();

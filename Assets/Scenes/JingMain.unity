@@ -23235,7 +23235,7 @@ MonoBehaviour:
   nodeParticles: []
   endParticles:
   - {fileID: 1547683238}
-  isEnding: 0
+  isEnding: 1
 --- !u!1 &1547683235
 GameObject:
   m_ObjectHideFlags: 0
@@ -32302,7 +32302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2017129004
 MonoBehaviour:
   m_ObjectHideFlags: 0
