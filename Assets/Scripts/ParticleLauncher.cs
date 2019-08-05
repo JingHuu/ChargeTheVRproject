@@ -20,8 +20,11 @@ public class ParticleLauncher : MonoBehaviour
     {
         if (nodeChange.hasFired)
         {
-            StartCoroutine(Ending());
-            if (!nodeParticleFired)
+            if (isEnding)
+            {
+                StartCoroutine(Ending());
+            }
+            else if (!nodeParticleFired)
             {
                 StartCoroutine(NodeInPlace());
                 nodeParticleFired = true;
