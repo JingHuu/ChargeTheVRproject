@@ -5,8 +5,10 @@ using UnityEngine;
 public class ParticleLauncher : MonoBehaviour
 {
     public ParticleSystem[] nodeParticles;
+    public ParticleSystem[] endParticles;
     private NodeColourChange nodeChange;
-    private bool particleFired = false;
+    private bool nodeParticleFired = false;
+    public bool isEnding = false;
 
     private void Start()
     {
@@ -18,10 +20,11 @@ public class ParticleLauncher : MonoBehaviour
     {
         if (nodeChange.hasFired)
         {
-            if (!particleFired)
+            StartCoroutine(Ending());
+            if (!nodeParticleFired)
             {
                 StartCoroutine(NodeInPlace());
-                particleFired = true;
+                nodeParticleFired = true;
             }
         }
     }
@@ -29,6 +32,15 @@ public class ParticleLauncher : MonoBehaviour
     public IEnumerator NodeInPlace()
     {
         foreach (ParticleSystem part in nodeParticles)
+        {
+            part.Play();
+        }
+        yield return null;
+    }
+
+    public IEnumerator Ending()
+    {
+        foreach (ParticleSystem part in endParticles)
         {
             part.Play();
         }

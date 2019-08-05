@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class FinalNodeColourChange : NodeColourChange
 {
+    private ParticleLauncher particleLauncher;
+
+    private void Start()
+    {
+        particleLauncher = GetComponentInChildren<ParticleLauncher>();
+    }
+
     public override void Update()
     {
 
@@ -17,6 +24,7 @@ public class FinalNodeColourChange : NodeColourChange
                     hasFired = true;
                     StartCoroutine(Fill());
                     AudioProgression();
+                    particleLauncher.isEnding = true;
                 }
 
             }
