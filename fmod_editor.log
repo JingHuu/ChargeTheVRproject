@@ -2,13 +2,12 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=11012 (101101), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=44100, nAvgBytesPerSec=352800, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 3760 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
-[WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
+[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000000003EE351B8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000001D8CF8F8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,238 +15,16 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] SystemI::createSound                     : filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 000000005F21BD58 : node = 0000000021320530
-[LOG] SystemI::createSound                     : add node to async list : head = 000000005F2B5D68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F21BD58
-[LOG] SystemI::createSound                     : filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSound                     :     setdata soundi = 000000005F21AC78 : node = 000000002131FAB0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005F2B5D68.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000021320648
-[LOG] SystemI::createSound                     :     filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 000000005F21B338 : node = 00000000213214F0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005F2B5D68.  list count = 1
-[LOG] SystemI::createSound                     :     filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000000005F21A0A8 : node = 000000002131FC00
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005F2B5D68.  list count = 2
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S1_BrassLead', format=2, channels=2, frequency=48000, lengthbytes=338912, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.664556.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F21BD58
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F21AC78
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000002131FBC8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S1_Piano', format=2, channels=2, frequency=48000, lengthbytes=258240, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.878296.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F21AC78
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F21B338
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000021321608
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S1_Supersaw', format=2, channels=2, frequency=48000, lengthbytes=302816, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.664413.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F21B338
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000005F21A0A8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000002131FD18
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S1_Bloops', format=2, channels=2, frequency=48000, lengthbytes=170112, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.191317.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000005F21A0A8
-[LOG] SoundI::getSubSound                      : sound 000000005F21BD58.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000005F21AC78.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000005F21B338.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000005F21A0A8.  Subsound index 0 / 1
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000007D2AF5CC
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBA6F00D70
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBA6F00D40
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBA6F00E40
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBA6F00F00
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000074844328
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='CVRSFX_JUSTPOP', format=2, channels=2, frequency=48000, lengthbytes=8608, lengthpcm=28800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.224371.
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] SystemI::createSound                     : filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000003B5C76B8 : node = 0000000014B452F0
-[LOG] SystemI::createSound                     : add node to async list : head = 000000005F2B5D68.  list count = 0
-[LOG] SystemI::createSound                     : filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003B5C76B8
-[LOG] SystemI::createSound                     : setdata soundi = 000000003B5C7F28 : node = 0000000014B456E0
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005F2B5D68.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSound                     :     filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000014B45408
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 0000000044757FD8 : node = 0000000014B449C0
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005F2B5D68.  list count = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 00000000447564D8 : node = 0000000014B44090
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005F2B5D68.  list count = 2
-[LOG] SystemI::createSound                     :     filename = Assets\ChargeAudio\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 0000000044757258 : node = 0000000014B45980
-[LOG] SystemI::createSound                     :     add node to async list : head = 000000005F2B5D68.  list count = 3
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S2_BrassLead', format=2, channels=2, frequency=48000, lengthbytes=351744, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.654743.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003B5C76B8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000003B5C7F28
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000014B457F8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S2_DrumLoop', format=2, channels=2, frequency=48000, lengthbytes=299744, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.956072.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000003B5C7F28
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000044757FD8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000014B44AD8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S2_Supersaw', format=2, channels=2, frequency=48000, lengthbytes=313504, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.942980.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000044757FD8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000447564D8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000014B441A8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S2_Piano', format=2, channels=2, frequency=48000, lengthbytes=257344, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.879647.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000447564D8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000044757258
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\ChargeAudio\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 13238016
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 41664
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000014B45A98
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='CVRBGM_S2_Bloops', format=2, channels=2, frequency=48000, lengthbytes=176064, lengthpcm=1084236, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.295222.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000044757258
-[LOG] SoundI::getSubSound                      : sound 000000003B5C76B8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000003B5C7F28.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 0000000044757FD8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 00000000447564D8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 0000000044757258.  Subsound index 0 / 1
-[LOG] SoundI::release                          : CVRBGM_S1_Bloops (000000005F21A0A8)
-[LOG] SoundI::release                          :     CVRBGM_S1_Bloops (000000005F2B4BD8)
-[LOG] SoundI::release                          :     CVRBGM_S1_Bloops (000000003B5C7358)
-[LOG] SoundI::release                          : CVRBGM_S1_Supersaw (000000005F21B338)
-[LOG] SoundI::release                          :     CVRBGM_S1_Supersaw (000000005F2B46F8)
-[LOG] SoundI::release                          :     CVRBGM_S1_Supersaw (000000003B5C71A8)
-[LOG] SoundI::release                          : CVRBGM_S1_Piano (000000005F21AC78)
-[LOG] SoundI::release                          :     CVRBGM_S1_Piano (000000005F2B4558)
-[LOG] SoundI::release                          :     CVRBGM_S1_Piano (000000003B5C7D78)
-[LOG] SoundI::release                          : CVRBGM_S1_BrassLead (000000005F21BD58)
-[LOG] SoundI::release                          :     CVRBGM_S1_BrassLead (000000005F2B43B8)
-[LOG] SoundI::release                          :     CVRBGM_S1_BrassLead (000000005F21A258)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
-[LOG] SoundI::release                          : CVRBGM_S2_Bloops (0000000044757258)
-[LOG] SoundI::release                          :     CVRBGM_S2_Bloops (000000006D1EDC38)
-[LOG] SoundI::release                          :     CVRBGM_S2_Bloops (0000000020D59A28)
-[LOG] SoundI::release                          : CVRBGM_S2_Piano (00000000447564D8)
-[LOG] SoundI::release                          :     CVRBGM_S2_Piano (000000005F2B5598)
-[LOG] SoundI::release                          :     CVRBGM_S2_Piano (0000000020D591B8)
-[LOG] SoundI::release                          : CVRBGM_S2_Supersaw (0000000044757FD8)
-[LOG] SoundI::release                          :     CVRBGM_S2_Supersaw (000000005F2B5258)
-[LOG] SoundI::release                          :     CVRBGM_S2_Supersaw (0000000044757408)
-[LOG] SoundI::release                          : CVRBGM_S2_DrumLoop (000000003B5C7F28)
-[LOG] SoundI::release                          :     CVRBGM_S2_DrumLoop (000000005F2B60F8)
-[LOG] SoundI::release                          :     CVRBGM_S2_DrumLoop (0000000044756D48)
-[LOG] SoundI::release                          : CVRBGM_S2_BrassLead (000000003B5C76B8)
-[LOG] SoundI::release                          :     CVRBGM_S2_BrassLead (000000005F2B6438)
-[LOG] SoundI::release                          :     CVRBGM_S2_BrassLead (0000000044756B98)
-[LOG] SoundI::release                          :  (000000002131D3A8)
-[LOG] SoundI::release                          :     CVRSFX_JUSTPOP (000000005F2B4D78)
-[LOG] SoundI::release                          :  (000000004445EF98)
-[LOG] SoundI::release                          :     CVRBGM_S5.5_Supersaw (000000005F2B6778)
-[LOG] SoundI::release                          :  (000000004445FDF8)
-[LOG] SoundI::release                          :     CVRBGM_S5.5_Piano (000000005F2B72D8)
-[LOG] SoundI::release                          :  (000000004445FF68)
-[LOG] SoundI::release                          :     CVRBGM_S5.5_BrassLead (000000005F2B7478)
-[LOG] SoundI::release                          :  (000000004445E2A8)
-[LOG] SoundI::release                          :     CVRBGM_S0_Piano (000000005F2B6AB8)
-[LOG] SoundI::release                          :  (000000004445F108)
-[LOG] SoundI::release                          :     CVRBGM_S5.5_Cyms_Hats (000000005F2B4898)
-[LOG] SoundI::release                          :  (000000004445ECB8)
-[LOG] SoundI::release                          :     CVRBGM_S5.5_MainDrums (000000005F2B5DB8)
-[LOG] SoundI::release                          :  (000000004445E6F8)
-[LOG] SoundI::release                          :     CVRBGM_S5.5_Bass (000000005F2B6C58)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
-[LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] Manager::readBank                        : fileversion = 103, compatVersion = 99 (oldest = 44, newest = 103)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
