@@ -39,22 +39,26 @@ public class NodeColourChange : MonoBehaviour
     public bool hasFired = false;
     public bool isBattery = false;
 
+    private void Awake()
+    {
+        myT = transform;
+        StartCoroutine(Setup());
+    }
+
     void Start()
     {
         rend = GetComponent<Renderer>();
         AudioManager.audioProgression = 0f;
-
-        StartCoroutine(Setup());
 
         if (isStartBattery == true)
         {
             StartCoroutine(Fill());
         }
 
-        myT = transform;
+       
     }
 
-    [HideInInspector] public Transform myT;
+    public Transform myT;
 
     public virtual void Update()
     {
