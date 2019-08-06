@@ -49,6 +49,7 @@ public class NodeColourChange : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         AudioManager.audioProgression = 0f;
+        AudioManager.rotate = 0f;
 
         if (isStartBattery == true)
         {
@@ -73,6 +74,7 @@ public class NodeColourChange : MonoBehaviour
                     hasFired = true;
                     StartCoroutine(Fill());
                     AudioProgression();
+                    AudioManager.rotate = 0.5f;
                 }
 
             }

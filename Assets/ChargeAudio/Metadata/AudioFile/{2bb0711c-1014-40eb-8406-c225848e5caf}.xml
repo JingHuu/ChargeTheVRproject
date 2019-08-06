@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2bb0711c-1014-40eb-8406-c225848e5caf}">
+        <property name="assetPath">
+            <value>Score2Stems/CVRBGM_S4_Cyms_Hats.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>11.294124999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bcdc9436-46fd-4ab4-9daa-82b1284b307f}</destination>
+        </relationship>
+    </object>
+</objects>

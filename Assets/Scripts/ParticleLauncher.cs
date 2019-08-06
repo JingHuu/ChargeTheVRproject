@@ -39,6 +39,7 @@ public class ParticleLauncher : MonoBehaviour
         foreach (ParticleSystem part in nodeParticles)
         {
             part.Play();
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);
         }
         yield return null;
     }

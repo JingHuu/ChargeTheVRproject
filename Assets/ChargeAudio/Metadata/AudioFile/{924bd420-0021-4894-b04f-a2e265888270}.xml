@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{924bd420-0021-4894-b04f-a2e265888270}">
+        <property name="assetPath">
+            <value>sfx/444491__breviceps__short-choir.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.3750113378684805</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{bcdc9436-46fd-4ab4-9daa-82b1284b307f}</destination>
+        </relationship>
+    </object>
+</objects>

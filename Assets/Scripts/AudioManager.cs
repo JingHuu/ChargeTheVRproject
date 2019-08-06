@@ -11,8 +11,6 @@ public class AudioManager : MonoBehaviour
     public static float rotate;
     public static float audioProgression;
 
-
-    public static FMOD.Studio.ParameterInstance StemUnlock;
     public static FMOD.Studio.ParameterInstance musicProgression;
     public static FMOD.Studio.ParameterInstance Rotate;
 
@@ -21,6 +19,11 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
+        // connect to sound parameters
+        //music.getParameter("NodeUnlock", out StemUnlock);
+        music.getParameter("MusicProgression", out musicProgression);
+        NodeRotation.getParameter("Rotate", out Rotate);
+
         if (instance != null)
         {
             Destroy(gameObject);
@@ -41,20 +44,12 @@ public class AudioManager : MonoBehaviour
         //music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score");
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score2");
 
-
-        // connect to sound parameters
-        //music.getParameter("NodeUnlock", out StemUnlock);
-        music.getParameter("MusicProgression", out musicProgression);
-        NodeRotation.getParameter("Rotate", out Rotate);
-
         music.start();
     }
 
     void FixedUpdate()
     {
-        //StemUnlock.setValue(audioProgression);
         musicProgression.setValue(audioProgression);
-        
         Rotate.setValue(rotate);
     }
 
