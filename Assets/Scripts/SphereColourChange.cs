@@ -15,6 +15,8 @@ public class SphereColourChange : MonoBehaviour
     private Vector4 _yellow;
     private Vector4 _brightorange;
     private Vector4 _darkorange;
+    private float speed1;
+    private float speed2;
 
     // Start is called before the first frame update
     void Start()
@@ -26,9 +28,13 @@ public class SphereColourChange : MonoBehaviour
         _yellow = new Vector3(.6f, .3f, 0);
         _darkorange = new Vector3(1f, .2f, 0f);
         _brightorange = new Vector3(2.5f, .7f, 0);
+        speed1 = 0f;
+        speed2 = 0.02f;
 
         // initial emmissive colour
         rend.material.SetVector("_ColourIntensity", _blue);
+        rend.material.SetFloat("_Speed1", speed1);
+        rend.material.SetFloat("_Speed2", speed2);
     }
 
     // Update is called once per frame
@@ -55,21 +61,29 @@ public class SphereColourChange : MonoBehaviour
         float t = time / lerpTime;
 
         Vector3 c = rend.material.GetVector("_ColourIntensity");
+        float f1 = rend.material.GetFloat("_Speed1");
+        float f2 = rend.material.GetFloat("_Speed2");
 
-        if (AudioManager.audioProgression > 9f)
+        if (AudioManager.audioProgression >= 10f)
         {
             // blue yellow
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _yellow, t));
+            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.02f, t));
+            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.05f, t));
         }
-        else if (AudioManager.audioProgression > 49f)
+        else if (AudioManager.audioProgression >= 50f)
         {
             // yellow darkO
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _darkorange, t));
+            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.05f, t));
+            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
         }
-        else if (AudioManager.audioProgression > 59f)
+        else if (AudioManager.audioProgression >= 60f)
         {
             // darkO brightO
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _brightorange, t));
+            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.08f, t));
+            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
         }
         else
         {

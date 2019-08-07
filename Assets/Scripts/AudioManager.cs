@@ -19,11 +19,6 @@ public class AudioManager : MonoBehaviour
 
     void Awake()
     {
-        // connect to sound parameters
-        //music.getParameter("NodeUnlock", out StemUnlock);
-        music.getParameter("MusicProgression", out musicProgression);
-        NodeRotation.getParameter("Rotate", out Rotate);
-
         if (instance != null)
         {
             Destroy(gameObject);
@@ -44,6 +39,10 @@ public class AudioManager : MonoBehaviour
         //music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score");
         music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Score2");
 
+        // connect to sound parameters
+        music.getParameter("MusicProgression", out musicProgression);
+        NodeRotation.getParameter("rotate", out Rotate);
+
         music.start();
     }
 
@@ -59,7 +58,7 @@ public class AudioManager : MonoBehaviour
     {
         //switch (clip) { case ("music"): music.start(); break; }
         switch (clip) { case ("musicStop"): music.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT); break; }
-        switch (clip) { case ("RotateNode"): NodeRotation.start(); break; }
+        //switch (clip) { case ("RotateNode"): NodeRotation.start(); break; }
     }
 
 }

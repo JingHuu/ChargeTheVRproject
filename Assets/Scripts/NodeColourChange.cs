@@ -39,6 +39,8 @@ public class NodeColourChange : MonoBehaviour
     public bool hasFired = false;
     public bool isBattery = false;
 
+    [HideInInspector] public ParticleLauncher particleLauncher;
+
     private void Awake()
     {
         myT = transform;
@@ -48,8 +50,8 @@ public class NodeColourChange : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
+        particleLauncher = GetComponentInChildren<ParticleLauncher>();
         AudioManager.audioProgression = 0f;
-        AudioManager.rotate = 0f;
 
         if (isStartBattery == true)
         {
@@ -74,7 +76,6 @@ public class NodeColourChange : MonoBehaviour
                     hasFired = true;
                     StartCoroutine(Fill());
                     AudioProgression();
-                    AudioManager.rotate = 0.5f;
                 }
 
             }
@@ -124,6 +125,7 @@ IEnumerator Setup()
 
     public void AudioProgression()
     {
-        if(isBattery) AudioManager.audioProgression += 10f; // this will activate one stem in the audio everytime a battery turns on
+        if(isBattery) AudioManager.audioProgression += 10f; // this will activate music section in the audio everytime a battery turns on
+        Debug.Log(AudioManager.audioProgression);
     }
 }

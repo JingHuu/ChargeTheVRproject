@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RotateOnClick : MonoBehaviour
 {
-    //public float x, y, z;
     private NodeColourChange nodeChange;
 
     private void Start()
@@ -14,11 +13,9 @@ public class RotateOnClick : MonoBehaviour
     //Click left mouse button to rotate target
     public void OnMouseDown()
     {
-        
         if(nodeChange.Check())
         {
             transform.Rotate(0, 0, 45);
-            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);
         }
     }
     

@@ -24,7 +24,8 @@ public class ParticleLauncher : MonoBehaviour
         {
             if (isEnding)
             {
-                if (!alreadyEnded) StartCoroutine(Ending());
+                //if (!alreadyEnded) StartCoroutine(Ending());
+                StartCoroutine(Ending());
             }
             else if (!nodeParticleFired)
             {
@@ -46,7 +47,7 @@ public class ParticleLauncher : MonoBehaviour
 
     public IEnumerator Ending()
     {
-        alreadyEnded = true;
+        //alreadyEnded = true;
         foreach (ParticleSystem part in endParticles)
         {
             part.Play();
