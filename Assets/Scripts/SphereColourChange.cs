@@ -58,16 +58,16 @@ public class SphereColourChange : MonoBehaviour
         float f1 = rend.material.GetFloat("_Speed1");
         float f2 = rend.material.GetFloat("_Speed2");
 
-        if (AudioManager.audioProgression < 30f)
+        if (AudioManager.audioProgression < 30f && AudioManager.audioProgression >= 10f)
         {
             // blue yellow
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _yellow, t));
-            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.02f, t));
+            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.02f, t));  // lerping makes it moves very fast for a sec, then slows down. No idea why
             //rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.05f, t));
             rend.material.SetFloat("_Speed1", 0.02f);
             rend.material.SetFloat("_Speed2", 0.05f);
         }
-        else if (AudioManager.audioProgression < 60f)
+        else if (AudioManager.audioProgression < 60f && AudioManager.audioProgression >= 30f)
         {
             // yellow darkO
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _darkorange, t));

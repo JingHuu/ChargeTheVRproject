@@ -5,10 +5,13 @@ using UnityEngine;
 public class ParticleLauncher : MonoBehaviour
 {
     public ParticleSystem[] nodeParticles;
-    public ParticleSystem[] endParticles;
+    public ParticleSystem[] endParticlesImplode;
+    public ParticleSystem[] endParticlesExplode;
+    public float delay;
     private NodeColourChange nodeChange;
     private bool nodeParticleFired = false;
     [HideInInspector] public bool isEnding = false;
+    private bool alreadyEnd = false;
     
     private void Start()
     {
@@ -22,6 +25,7 @@ public class ParticleLauncher : MonoBehaviour
         {
             if (isEnding)
             {
+                if(!alreadyEnd)
                 StartCoroutine(Ending());
             }
             else if (!nodeParticleFired)
@@ -44,10 +48,16 @@ public class ParticleLauncher : MonoBehaviour
 
     public IEnumerator Ending()
     {
-        foreach (ParticleSystem part in endParticles)
+        foreach (ParticleSystem part in endParticlesImplode)
+        {
+            alreadyEnd = true;
+            part.Play();
+        }
+        yield return new WaitForSeconds(delay);
+
+        foreach (ParticleSystem part in endParticlesExplode)
         {
             part.Play();
         }
-        yield return null;
     }
 }

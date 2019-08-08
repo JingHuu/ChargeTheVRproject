@@ -65,7 +65,6 @@ public class NodeColourChange : MonoBehaviour
 
     public virtual void Update()
     {
-
         //If this object is NOT the starting node AND is EITHER one of the trigger angles, do the thing.
         if (!isStartBattery && triggerAngle + 2 >= myT.eulerAngles.z && triggerAngle - 2 <= myT.eulerAngles.z)
         {
@@ -81,7 +80,6 @@ public class NodeColourChange : MonoBehaviour
             }
 
         }
-
     }
     
 IEnumerator Setup()
@@ -126,6 +124,6 @@ IEnumerator Setup()
     public void AudioProgression()
     {
         if(isBattery) AudioManager.audioProgression += 10f; // this will activate music section in the audio everytime a battery turns on
-        Debug.Log(AudioManager.audioProgression);
+        //Debug.Log(AudioManager.audioProgression);
     }
 }
