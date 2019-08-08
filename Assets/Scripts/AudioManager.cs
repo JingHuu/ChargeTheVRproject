@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     // list all possible game sounds
     public static FMOD.Studio.EventInstance music;// game music loop
     public static FMOD.Studio.EventInstance NodeRotation; // node rotate sfx
+    public static FMOD.Studio.EventInstance NodeInPlace; //node in place sfx
 
     public static float rotate;
     public static float audioProgression;
@@ -42,6 +43,7 @@ public class AudioManager : MonoBehaviour
         // connect to sound parameters
         music.getParameter("MusicProgression", out musicProgression);
         NodeRotation.getParameter("rotate", out Rotate);
+        NodeInPlace.getParameter("rotate", out Rotate);
 
         music.start();
     }

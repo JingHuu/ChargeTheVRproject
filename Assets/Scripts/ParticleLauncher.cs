@@ -8,9 +8,7 @@ public class ParticleLauncher : MonoBehaviour
     public ParticleSystem[] endParticles;
     private NodeColourChange nodeChange;
     private bool nodeParticleFired = false;
-    public bool isEnding = false;
-
-    private bool alreadyEnded;
+    [HideInInspector] public bool isEnding = false;
     
     private void Start()
     {
@@ -24,7 +22,6 @@ public class ParticleLauncher : MonoBehaviour
         {
             if (isEnding)
             {
-                //if (!alreadyEnded) StartCoroutine(Ending());
                 StartCoroutine(Ending());
             }
             else if (!nodeParticleFired)
@@ -40,14 +37,13 @@ public class ParticleLauncher : MonoBehaviour
         foreach (ParticleSystem part in nodeParticles)
         {
             part.Play();
-            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeInPlace", this.gameObject);
         }
         yield return null;
     }
 
     public IEnumerator Ending()
     {
-        //alreadyEnded = true;
         foreach (ParticleSystem part in endParticles)
         {
             part.Play();

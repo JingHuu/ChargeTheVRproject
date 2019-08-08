@@ -16,6 +16,7 @@ public class RotateOnClick : MonoBehaviour
         if(nodeChange.Check())
         {
             transform.Rotate(0, 0, 45);
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/SFX/NodeRotate", this.gameObject);
         }
     }
     

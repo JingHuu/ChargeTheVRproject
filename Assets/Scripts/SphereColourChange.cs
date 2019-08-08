@@ -31,9 +31,8 @@ public class SphereColourChange : MonoBehaviour
         speed1 = 0f;
         speed2 = 0.02f;
 
-        // initial emmissive colour
-        rend.material.SetVector("_ColourIntensity", _blue);
-        rend.material.SetFloat("_Speed1", speed1);
+        rend.material.SetVector("_ColourIntensity", _blue); // initial emissive
+        rend.material.SetFloat("_Speed1", speed1); //initial speed
         rend.material.SetFloat("_Speed2", speed2);
     }
 
@@ -41,11 +40,6 @@ public class SphereColourChange : MonoBehaviour
     void Update()
     {
         SphereEmmissiveChange();
-        /*time += Time.deltaTime;
-        float t = time / lerpTime;
-
-        rend.material.SetVector("_ColourIntensity", new Vector4(Mathf.Lerp(_blue.x, _yellow.x, t), Mathf.Lerp(_blue.y, _yellow.y, t), Mathf.Lerp(_blue.z, _yellow.z, t), Mathf.Lerp(_blue.w, _yellow.w, t)));
-        */
 
         if (AudioManager.audioProgression != previousAudioProgression)
         {
@@ -64,26 +58,32 @@ public class SphereColourChange : MonoBehaviour
         float f1 = rend.material.GetFloat("_Speed1");
         float f2 = rend.material.GetFloat("_Speed2");
 
-        if (AudioManager.audioProgression >= 10f)
+        if (AudioManager.audioProgression < 30f)
         {
             // blue yellow
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _yellow, t));
-            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.02f, t));
-            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.05f, t));
+            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.02f, t));
+            //rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.05f, t));
+            rend.material.SetFloat("_Speed1", 0.02f);
+            rend.material.SetFloat("_Speed2", 0.05f);
         }
-        else if (AudioManager.audioProgression >= 50f)
+        else if (AudioManager.audioProgression < 60f)
         {
             // yellow darkO
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _darkorange, t));
-            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.05f, t));
-            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
+            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.05f, t));
+            //rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
+            rend.material.SetFloat("_Speed1", 0.05f);
+            rend.material.SetFloat("_Speed2", 0.08f);
         }
         else if (AudioManager.audioProgression >= 60f)
         {
             // darkO brightO
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _brightorange, t));
-            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.08f, t));
-            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
+            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.08f, t));
+            //rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
+            rend.material.SetFloat("_Speed1", 0.08f);
+            rend.material.SetFloat("_Speed2", 0.08f);
         }
         else
         {

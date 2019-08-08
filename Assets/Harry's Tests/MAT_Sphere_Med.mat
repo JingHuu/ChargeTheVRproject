@@ -29,6 +29,8 @@ Material:
     - Vector1_BFD45A44: 0.05
     - Vector1_E6D0D715: -0.4
     - Vector1_F4661DDC: 12
+    - _Speed1: 0.02
+    - _Speed2: 0.05
     m_Colors:
     - _Colour: {r: 1, g: 1, b: 1, a: 1}
-    - _ColourIntensity: {r: 0.52, g: 2.4, b: 3.64, a: 0}
+    - _ColourIntensity: {r: 0.6, g: 0.3, b: 0, a: 0}
