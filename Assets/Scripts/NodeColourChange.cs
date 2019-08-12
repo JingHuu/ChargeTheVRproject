@@ -49,6 +49,7 @@ public class NodeColourChange : MonoBehaviour
 
     void Start()
     {
+        GameManager.isGameRunning = true;
         rend = GetComponent<Renderer>();
         particleLauncher = GetComponentInChildren<ParticleLauncher>();
         AudioManager.audioProgression = 0f;

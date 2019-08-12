@@ -20,6 +20,7 @@ public class FinalNodeColourChange : NodeColourChange
                     StartCoroutine(Fill());
                     AudioProgression();
                     particleLauncher.isEnding = true;
+                    GameManager.gameEnds = true;
                 }
 
             }
