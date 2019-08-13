@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     IEnumerator RestartGame()
     {
         hasEnd = true;
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(12);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

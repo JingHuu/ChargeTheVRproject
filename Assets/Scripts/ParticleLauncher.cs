@@ -7,12 +7,14 @@ public class ParticleLauncher : MonoBehaviour
     public ParticleSystem[] nodeParticles;
     public ParticleSystem[] endParticlesImplode;
     public ParticleSystem[] endParticlesExplode;
+    public ParticleSystem[] twinkle;
     public float delay;
     private NodeColourChange nodeChange;
     private bool nodeParticleFired = false;
     [HideInInspector] public bool isEnding = false;
     private bool alreadyEnd = false;
-    
+    private bool hasfired = false;
+
     private void Start()
     {
         nodeChange = GetComponentInChildren<NodeColourChange>();
@@ -25,8 +27,11 @@ public class ParticleLauncher : MonoBehaviour
         {
             if (isEnding)
             {
-                if(!alreadyEnd)
-                StartCoroutine(Ending());
+                if (!alreadyEnd)
+                {
+                    StartCoroutine(Ending());
+                    StartCoroutine(EndingSequence());
+                }
             }
             else if (!nodeParticleFired)
             {
@@ -58,6 +63,19 @@ public class ParticleLauncher : MonoBehaviour
         foreach (ParticleSystem part in endParticlesExplode)
         {
             part.Play();
+        }
+    }
+
+    public IEnumerator EndingSequence()
+    {
+
+        yield return new WaitForSeconds(delay + 2f);
+        foreach (ParticleSystem part in twinkle)
+        {
+            if (!hasfired)
+            {
+                part.Play();
+            }
         }
     }
 }
