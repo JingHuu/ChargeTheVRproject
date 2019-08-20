@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     private bool hasEnd = false;
     //public float timeLeft = 50f;
 
+    private void Start()
+    {
+        Screen.SetResolution(1920, 1080, true);
+    }
 
     // Update is called once per frame
     void Update()

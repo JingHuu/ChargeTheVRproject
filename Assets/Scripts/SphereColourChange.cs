@@ -5,7 +5,9 @@ using UnityEngine;
 public class SphereColourChange : MonoBehaviour
 {
     [SerializeField]
-    private float lerpTime = 10f;
+    private float lerpTime = 50f;
+    [SerializeField]
+    private float speedLerpTime = 100f;
     private float time;
     private float previousAudioProgression;
 
@@ -37,7 +39,7 @@ public class SphereColourChange : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         SphereEmmissiveChange();
 
@@ -53,6 +55,7 @@ public class SphereColourChange : MonoBehaviour
     {
         time += Time.deltaTime;
         float t = time / lerpTime;
+        float st = time / speedLerpTime;
 
         Vector3 c = rend.material.GetVector("_ColourIntensity");
         float f1 = rend.material.GetFloat("_Speed1");
@@ -62,28 +65,25 @@ public class SphereColourChange : MonoBehaviour
         {
             // blue yellow
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _yellow, t));
-            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.02f, t));  // lerping makes it moves very fast for a sec, then slows down. No idea why
-            //rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.05f, t));
-            rend.material.SetFloat("_Speed1", 0.02f);
-            rend.material.SetFloat("_Speed2", 0.05f);
+            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.02f, st));
+            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.05f, st));
+
         }
         else if (AudioManager.audioProgression < 60f && AudioManager.audioProgression >= 30f)
         {
             // yellow darkO
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _darkorange, t));
-            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.05f, t));
-            //rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
-            rend.material.SetFloat("_Speed1", 0.05f);
-            rend.material.SetFloat("_Speed2", 0.08f);
+            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.05f, st));
+            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, st));
+
         }
         else if (AudioManager.audioProgression >= 60f)
         {
             // darkO brightO
             rend.material.SetVector("_ColourIntensity", Vector3.Lerp(c, _brightorange, t));
-            //rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.08f, t));
-            //rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.08f, t));
-            rend.material.SetFloat("_Speed1", 0.08f);
-            rend.material.SetFloat("_Speed2", 0.08f);
+            rend.material.SetFloat("_Speed1", Mathf.Lerp(f1, 0.08f, st));
+            rend.material.SetFloat("_Speed2", Mathf.Lerp(f2, 0.1f, st));
+
         }
         else
         {
